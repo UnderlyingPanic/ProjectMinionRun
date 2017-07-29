@@ -595,8 +595,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.75
+  m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &139520843
@@ -691,8 +691,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.75
+  m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &190955127
@@ -804,6 +804,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 216124947}
+  - component: {fileID: 216124948}
   m_Layer: 0
   m_Name: Mid Gate
   m_TagString: Untagged
@@ -827,6 +828,18 @@ Transform:
   m_Father: {fileID: 1078327148}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!65 &216124948
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 216124946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &234754998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,8 +1159,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.75
+  m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &310993424
@@ -1178,7 +1191,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -30.59
+      value: 16.62
       objectReference: {fileID: 0}
     - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1186,7 +1199,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -31.38
+      value: 1.99
       objectReference: {fileID: 0}
     - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1212,7 +1225,17 @@ Prefab:
         type: 2}
       propertyPath: targetGate
       value: 
-      objectReference: {fileID: 1471944202}
+      objectReference: {fileID: 1471944201}
+    - target: {fileID: 114001307906877988, guid: 3fd51334292efaf48bd34865806ed6e2,
+        type: 2}
+      propertyPath: attackRange
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 114001307906877988, guid: 3fd51334292efaf48bd34865806ed6e2,
+        type: 2}
+      propertyPath: sightRange
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
   m_IsPrefabParent: 0
@@ -1885,8 +1908,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.75
+  m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1004929929
@@ -2029,6 +2052,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1099459894}
+  - component: {fileID: 1099459895}
   m_Layer: 0
   m_Name: Bot Gate
   m_TagString: Untagged
@@ -2052,6 +2076,18 @@ Transform:
   m_Father: {fileID: 328383774}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &1099459895
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1099459893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1207192195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,6 +2377,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1336284121}
+  - component: {fileID: 1336284122}
   m_Layer: 0
   m_Name: Top Gate
   m_TagString: Untagged
@@ -2364,6 +2401,18 @@ Transform:
   m_Father: {fileID: 1078327148}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1336284122
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336284120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1339596018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,6 +2684,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1471944202}
+  - component: {fileID: 1471944203}
   m_Layer: 0
   m_Name: Mid Gate
   m_TagString: Untagged
@@ -2658,6 +2708,18 @@ Transform:
   m_Father: {fileID: 328383774}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!65 &1471944203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1471944201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1495792820
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,8 +2877,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.75
+  m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1498491700
@@ -2847,7 +2909,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -87.53
+      value: -7.65
       objectReference: {fileID: 0}
     - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2855,7 +2917,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -87.47
+      value: -6.92
       objectReference: {fileID: 0}
     - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2881,7 +2943,24 @@ Prefab:
         type: 2}
       propertyPath: targetGate
       value: 
-      objectReference: {fileID: 216124947}
+      objectReference: {fileID: 216124946}
+    - target: {fileID: 4181607697714490, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181607697714490, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -20.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181607697714490, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114278428762367322, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7,
+        type: 2}
+      propertyPath: sightRange
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
   m_IsPrefabParent: 0
@@ -2958,8 +3037,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.75
+  m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1682359433
@@ -2989,6 +3068,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1682856591}
+  - component: {fileID: 1682856592}
   m_Layer: 0
   m_Name: Top Gate
   m_TagString: Untagged
@@ -3012,6 +3092,18 @@ Transform:
   m_Father: {fileID: 328383774}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1682856592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682856590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1722643115
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,8 +3341,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.75
+  m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1825563915
@@ -3692,6 +3784,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2062856707}
+  - component: {fileID: 2062856708}
   m_Layer: 0
   m_Name: Bot Gate
   m_TagString: Untagged
@@ -3715,6 +3808,18 @@ Transform:
   m_Father: {fileID: 1078327148}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &2062856708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062856706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2090262693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3788,8 +3893,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.75
+  m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &2090262697
