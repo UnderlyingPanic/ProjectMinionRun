@@ -1178,7 +1178,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -56.456062
+      value: -30.59
       objectReference: {fileID: 0}
     - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1186,7 +1186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -57.245667
+      value: -31.38
       objectReference: {fileID: 0}
     - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1208,6 +1208,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114001307906877988, guid: 3fd51334292efaf48bd34865806ed6e2,
+        type: 2}
+      propertyPath: targetGate
+      value: 
+      objectReference: {fileID: 1471944202}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
   m_IsPrefabParent: 0
@@ -2877,16 +2882,6 @@ Prefab:
       propertyPath: targetGate
       value: 
       objectReference: {fileID: 216124947}
-    - target: {fileID: 54334634553092682, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 114278428762367322, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7,
-        type: 2}
-      propertyPath: ownedByThisPlayer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
   m_IsPrefabParent: 0

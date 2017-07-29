@@ -5,9 +5,10 @@ using UnityEngine;
 public class Creep : MonoBehaviour {
 
     public float moveSpeed;
+    public float attackRange;
     public Transform targetGate;
     public bool ownedByThisPlayer;
-
+    
     
     private List<GameObject> enemiesInSights = new List<GameObject>();
     private Transform currentTarget;
@@ -24,28 +25,21 @@ public class Creep : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-
-        
-        
-
         animator.SetBool("isRunning", false);
         MoveToCurrentTarget();
     }
 
     private void FixedUpdate()
     {
+        Debug.Log(name + "- " + currentTarget);
 
-       
-
-        Debug.Log(name + "- Current List of Enemies in Sight: " + enemiesInSights.Count);
-
-        //Do these two RIGHT AT THE END
+        //Do this RIGHT AT THE END
         enemiesInSights.Clear();
     }
 
     private void MoveToCurrentTarget()
     {
-        transform.LookAt(currentTarget);
+        transform.LookAt(new Vector3(currentTarget.transform.position.x, this.transform.position.y, currentTarget.transform.position.z));
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
 
         if (moveSpeed > 0)
@@ -87,6 +81,8 @@ public class Creep : MonoBehaviour {
             }
         }
 
+        currentTarget = ChooseTarget();
+
     }
 
     private Transform ChooseTarget ()
@@ -97,7 +93,7 @@ public class Creep : MonoBehaviour {
         {
             if (Vector3.Distance (this.transform.position, enemy.transform.position) < Vector3.Distance (this.transform.position, closestTarget.transform.position))
             {
-                closestTarget = targetGate;
+                closestTarget = enemy.transform;
             }
         }
 
