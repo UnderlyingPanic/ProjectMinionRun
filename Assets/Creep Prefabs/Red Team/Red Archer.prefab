@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 95871631278460304}
   - component: {fileID: 54083733865906840}
   - component: {fileID: 136135048137405226}
+  - component: {fileID: 114100894128393400}
   m_Layer: 0
   m_Name: Red Archer
   m_TagString: Untagged
@@ -1078,6 +1079,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114100894128393400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617755027851056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7807dd54576e49d41aecd333bd1cf58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  attackRange: 0
+  targetGate: {fileID: 0}
+  team: 1
+  lane: 0
 --- !u!136 &136135048137405226
 CapsuleCollider:
   m_ObjectHideFlags: 1

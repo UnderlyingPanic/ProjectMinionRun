@@ -595,7 +595,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
+  m_Radius: 0.69
   m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -617,7 +617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29765b369fc86ad45a3d064611730bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownedByThisPlayer: 0
+  team: 1
+  lane: 1
 --- !u!1 &190955123
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,7 +692,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
+  m_Radius: 0.69
   m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -713,7 +714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29765b369fc86ad45a3d064611730bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownedByThisPlayer: 0
+  team: 1
+  lane: 1
 --- !u!1 &195716176
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 216124947}
   - component: {fileID: 216124948}
+  - component: {fileID: 216124949}
   m_Layer: 0
   m_Name: Mid Gate
   m_TagString: Untagged
@@ -825,6 +828,8 @@ Transform:
   - {fileID: 1940269934}
   - {fileID: 234754999}
   - {fileID: 1799027182}
+  - {fileID: 570394002}
+  - {fileID: 465912027}
   m_Father: {fileID: 1078327148}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
@@ -840,6 +845,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &216124949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 216124946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f29e2b0dead314d95b2bc5afd1e6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 1
+  team: 1
+  swordsman: {fileID: 1620748515982200, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
+  mage: {fileID: 1812383316571046, guid: fdab1aab00fcaf047b5f69fb725afa0b, type: 2}
+  archer: {fileID: 1617755027851056, guid: 2065bd435afbfa947a7b7befc1016a2c, type: 2}
+  mountedMage: {fileID: 1309432783199132, guid: 07e395ed839d9844cab3fd26423deaf1,
+    type: 2}
+  mountedSwordsman: {fileID: 1696300484983390, guid: 0c2ac4f4b25b54044b5b1c6a51cede2b,
+    type: 2}
+  spawnPoint: {fileID: 465912026}
 --- !u!1 &234754998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,7 +1185,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
+  m_Radius: 0.69
   m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -1181,64 +1207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29765b369fc86ad45a3d064611730bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownedByThisPlayer: 0
---- !u!1001 &312976353
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 16.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.499
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.92387956
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.3826834
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195034424642646, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114001307906877988, guid: 3fd51334292efaf48bd34865806ed6e2,
-        type: 2}
-      propertyPath: targetGate
-      value: 
-      objectReference: {fileID: 1471944201}
-    - target: {fileID: 114001307906877988, guid: 3fd51334292efaf48bd34865806ed6e2,
-        type: 2}
-      propertyPath: attackRange
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 114001307906877988, guid: 3fd51334292efaf48bd34865806ed6e2,
-        type: 2}
-      propertyPath: sightRange
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
-  m_IsPrefabParent: 0
+  team: 1
+  lane: 1
 --- !u!1 &328383773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,7 +1238,7 @@ Transform:
   - {fileID: 1682856591}
   - {fileID: 1099459894}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &347474459
 GameObject:
@@ -1556,6 +1526,89 @@ Transform:
   m_Father: {fileID: 925442609}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &465912026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 465912027}
+  m_Layer: 0
+  m_Name: Spawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &465912027
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465912026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 216124947}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &570394001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 570394002}
+  - component: {fileID: 570394003}
+  - component: {fileID: 570394004}
+  m_Layer: 0
+  m_Name: Team2 Mid Waypoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &570394002
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570394001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 216124947}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &570394003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570394001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373caee7cba1fc04e805286f605bd747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 1
+  team: 1
+--- !u!65 &570394004
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570394001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &717852025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,7 +1886,7 @@ Transform:
   m_Children:
   - {fileID: 404067782}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1004929925
 GameObject:
@@ -1908,7 +1961,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
+  m_Radius: 0.69
   m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -1930,7 +1983,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29765b369fc86ad45a3d064611730bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownedByThisPlayer: 1
+  team: 0
+  lane: 1
 --- !u!1 &1078327147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,7 +2014,7 @@ Transform:
   - {fileID: 2062856707}
   - {fileID: 216124947}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1093709451
 GameObject:
@@ -2053,13 +2107,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1099459894}
   - component: {fileID: 1099459895}
+  - component: {fileID: 1099459896}
   m_Layer: 0
   m_Name: Bot Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1099459894
 Transform:
   m_ObjectHideFlags: 0
@@ -2088,6 +2143,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1099459896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1099459893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f29e2b0dead314d95b2bc5afd1e6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 2
+  team: 0
+  swordsman: {fileID: 1458715896894060, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
+  mage: {fileID: 1619184541004558, guid: 0d895a043dccc014e938c22a9a252e1f, type: 2}
+  archer: {fileID: 1890706120096870, guid: f5e5a81be3963d64d90c3814b5fecf33, type: 2}
+  mountedMage: {fileID: 1767636779532678, guid: 7d8fb82ae42502f46bb29518df3a00e9,
+    type: 2}
+  mountedSwordsman: {fileID: 1870875750811400, guid: ce89d3eb5d5af5f42b9289bec70a1fed,
+    type: 2}
+  spawnPoint: {fileID: 0}
 --- !u!1 &1207192195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,7 +2405,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1322462457
 GameObject:
@@ -2367,7 +2443,7 @@ Transform:
   - {fileID: 749663438}
   - {fileID: 1961820224}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1336284120
 GameObject:
@@ -2378,13 +2454,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1336284121}
   - component: {fileID: 1336284122}
+  - component: {fileID: 1336284123}
   m_Layer: 0
   m_Name: Top Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1336284121
 Transform:
   m_ObjectHideFlags: 0
@@ -2413,6 +2490,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1336284123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336284120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f29e2b0dead314d95b2bc5afd1e6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 0
+  team: 1
+  swordsman: {fileID: 1620748515982200, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
+  mage: {fileID: 1812383316571046, guid: fdab1aab00fcaf047b5f69fb725afa0b, type: 2}
+  archer: {fileID: 1617755027851056, guid: 2065bd435afbfa947a7b7befc1016a2c, type: 2}
+  mountedMage: {fileID: 1309432783199132, guid: 07e395ed839d9844cab3fd26423deaf1,
+    type: 2}
+  mountedSwordsman: {fileID: 1696300484983390, guid: 0c2ac4f4b25b54044b5b1c6a51cede2b,
+    type: 2}
+  spawnPoint: {fileID: 0}
 --- !u!1 &1339596018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,6 +2595,61 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1339596018}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1388981015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1388981016}
+  - component: {fileID: 1388981017}
+  - component: {fileID: 1388981018}
+  m_Layer: 0
+  m_Name: Team1 Mid Waypoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1388981016
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388981015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1471944202}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1388981017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388981015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373caee7cba1fc04e805286f605bd747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 1
+  team: 0
+--- !u!65 &1388981018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388981015}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1439031499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2674,7 +2827,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1471944201
 GameObject:
@@ -2685,6 +2838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1471944202}
   - component: {fileID: 1471944203}
+  - component: {fileID: 1471944204}
   m_Layer: 0
   m_Name: Mid Gate
   m_TagString: Untagged
@@ -2705,6 +2859,8 @@ Transform:
   - {fileID: 1093709452}
   - {fileID: 1275442571}
   - {fileID: 195716177}
+  - {fileID: 1388981016}
+  - {fileID: 1485105068}
   m_Father: {fileID: 328383774}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
@@ -2720,6 +2876,55 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1471944204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1471944201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f29e2b0dead314d95b2bc5afd1e6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 1
+  team: 0
+  swordsman: {fileID: 1458715896894060, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
+  mage: {fileID: 1619184541004558, guid: 0d895a043dccc014e938c22a9a252e1f, type: 2}
+  archer: {fileID: 1890706120096870, guid: f5e5a81be3963d64d90c3814b5fecf33, type: 2}
+  mountedMage: {fileID: 1767636779532678, guid: 7d8fb82ae42502f46bb29518df3a00e9,
+    type: 2}
+  mountedSwordsman: {fileID: 1870875750811400, guid: ce89d3eb5d5af5f42b9289bec70a1fed,
+    type: 2}
+  spawnPoint: {fileID: 1485105067}
+--- !u!1 &1485105067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1485105068}
+  m_Layer: 0
+  m_Name: Spawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1485105068
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1485105067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1471944202}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1495792820
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,7 +3082,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
+  m_Radius: 0.69
   m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -2899,71 +3104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29765b369fc86ad45a3d064611730bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownedByThisPlayer: 0
---- !u!1001 &1507925761
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -7.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -6.92
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.38268343
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.92387956
-      objectReference: {fileID: 0}
-    - target: {fileID: 4383686343722878, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114278428762367322, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7,
-        type: 2}
-      propertyPath: targetGate
-      value: 
-      objectReference: {fileID: 216124946}
-    - target: {fileID: 4181607697714490, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4181607697714490, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -20.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4181607697714490, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114278428762367322, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7,
-        type: 2}
-      propertyPath: sightRange
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
-  m_IsPrefabParent: 0
+  team: 1
+  lane: 1
 --- !u!1 &1682359429
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,7 +3179,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
+  m_Radius: 0.69
   m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -3059,7 +3201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29765b369fc86ad45a3d064611730bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownedByThisPlayer: 1
+  team: 0
+  lane: 1
 --- !u!1 &1682856590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,13 +3212,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1682856591}
   - component: {fileID: 1682856592}
+  - component: {fileID: 1682856593}
   m_Layer: 0
   m_Name: Top Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1682856591
 Transform:
   m_ObjectHideFlags: 0
@@ -3104,6 +3248,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1682856593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682856590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f29e2b0dead314d95b2bc5afd1e6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 0
+  team: 0
+  swordsman: {fileID: 1458715896894060, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
+  mage: {fileID: 1619184541004558, guid: 0d895a043dccc014e938c22a9a252e1f, type: 2}
+  archer: {fileID: 1890706120096870, guid: f5e5a81be3963d64d90c3814b5fecf33, type: 2}
+  mountedMage: {fileID: 1767636779532678, guid: 7d8fb82ae42502f46bb29518df3a00e9,
+    type: 2}
+  mountedSwordsman: {fileID: 1870875750811400, guid: ce89d3eb5d5af5f42b9289bec70a1fed,
+    type: 2}
+  spawnPoint: {fileID: 0}
 --- !u!1 &1722643115
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,6 +3351,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1722643115}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1770123740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1770123741}
+  m_Layer: 0
+  m_Name: Map Waypoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1770123741
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770123740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -78, y: 2.5, z: -72}
+  m_LocalScale: {x: 2, y: 3, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1799027181
 GameObject:
   m_ObjectHideFlags: 0
@@ -3341,7 +3534,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
+  m_Radius: 0.69
   m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -3363,7 +3556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29765b369fc86ad45a3d064611730bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownedByThisPlayer: 1
+  team: 0
+  lane: 1
 --- !u!1 &1832929646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,6 +3804,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1846549187}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1851255834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1851255836}
+  m_Layer: 0
+  m_Name: Mid Waypoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1851255836
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851255834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: -16.225708, z: 15.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940269933
 GameObject:
   m_ObjectHideFlags: 0
@@ -3785,13 +4007,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2062856707}
   - component: {fileID: 2062856708}
+  - component: {fileID: 2062856709}
   m_Layer: 0
   m_Name: Bot Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2062856707
 Transform:
   m_ObjectHideFlags: 0
@@ -3820,6 +4043,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2062856709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062856706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f29e2b0dead314d95b2bc5afd1e6e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 2
+  team: 1
+  swordsman: {fileID: 1620748515982200, guid: 3fd51334292efaf48bd34865806ed6e2, type: 2}
+  mage: {fileID: 1812383316571046, guid: fdab1aab00fcaf047b5f69fb725afa0b, type: 2}
+  archer: {fileID: 1617755027851056, guid: 2065bd435afbfa947a7b7befc1016a2c, type: 2}
+  mountedMage: {fileID: 1309432783199132, guid: 07e395ed839d9844cab3fd26423deaf1,
+    type: 2}
+  mountedSwordsman: {fileID: 1696300484983390, guid: 0c2ac4f4b25b54044b5b1c6a51cede2b,
+    type: 2}
+  spawnPoint: {fileID: 0}
 --- !u!1 &2090262693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,7 +4137,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
+  m_Radius: 0.69
   m_Height: 2.99
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -3915,4 +4159,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29765b369fc86ad45a3d064611730bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownedByThisPlayer: 1
+  team: 0
+  lane: 1

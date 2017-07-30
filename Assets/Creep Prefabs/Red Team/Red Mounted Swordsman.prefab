@@ -704,6 +704,7 @@ GameObject:
   - component: {fileID: 95328911750657206}
   - component: {fileID: 54812341581477572}
   - component: {fileID: 136051780564530166}
+  - component: {fileID: 114600379938284822}
   m_Layer: 0
   m_Name: Red Mounted Swordsman
   m_TagString: Untagged
@@ -1703,7 +1704,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1275551207558542}
-  m_LocalRotation: {x: 0.61767566, y: 0.71388996, z: -0.060704786, w: 0.32427278}
+  m_LocalRotation: {x: 0.61767566, y: 0.71388996, z: -0.060704783, w: 0.32427278}
   m_LocalPosition: {x: -0.10147072, y: -0.00000009689331, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2021,6 +2022,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114600379938284822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1696300484983390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7807dd54576e49d41aecd333bd1cf58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  attackRange: 0
+  targetGate: {fileID: 0}
+  team: 1
+  lane: 0
 --- !u!136 &136051780564530166
 CapsuleCollider:
   m_ObjectHideFlags: 1

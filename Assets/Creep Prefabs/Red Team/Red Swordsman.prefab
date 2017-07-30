@@ -1174,8 +1174,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1.5
+  attackRange: 0.75
   targetGate: {fileID: 0}
-  ownedByThisPlayer: 0
+  team: 1
+  lane: 0
 --- !u!136 &136712424322343038
 CapsuleCollider:
   m_ObjectHideFlags: 1

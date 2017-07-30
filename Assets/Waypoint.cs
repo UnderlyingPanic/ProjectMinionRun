@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pylon : MonoBehaviour {
+public class Waypoint : MonoBehaviour {
 
-    public Team team;
     public Lane lane;
-    
+    [Tooltip ("Which Team's Base is this leading to?")] public Team team;
 
 	// Use this for initialization
 	void Start () {

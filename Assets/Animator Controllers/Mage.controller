@@ -32,7 +32,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: triggerAttack
+  - m_Name: triggerAttackA
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: triggerAttackB
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -128,7 +134,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: triggerAttack
+    m_ConditionEvent: triggerAttackA
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: triggerAttackB
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102203474203989962}
@@ -304,7 +313,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 08784b2405c72564693bf2af5a898c81, type: 3}
+  m_Motion: {fileID: 7400000, guid: 9f55775a7ae050345b07948903982037, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

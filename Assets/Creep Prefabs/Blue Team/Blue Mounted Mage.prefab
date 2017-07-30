@@ -703,6 +703,8 @@ GameObject:
   - component: {fileID: 95343467442050186}
   - component: {fileID: 54906616653778876}
   - component: {fileID: 136919640134164390}
+  - component: {fileID: 65895545887364496}
+  - component: {fileID: 114757093318719100}
   m_Layer: 0
   m_Name: Blue Mounted Mage
   m_TagString: Untagged
@@ -1597,7 +1599,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1060329776343004}
-  m_LocalRotation: {x: 0.61767566, y: 0.71388996, z: -0.060704783, w: 0.32427278}
+  m_LocalRotation: {x: 0.6176757, y: 0.71389, z: -0.060704786, w: 0.3242728}
   m_LocalPosition: {x: -0.10147072, y: -0.00000009689331, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1974,6 +1976,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!65 &65895545887364496
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767636779532678}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1.5, z: 20}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!95 &95343467442050186
 Animator:
   serializedVersion: 3
@@ -1991,6 +2005,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114757093318719100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767636779532678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7807dd54576e49d41aecd333bd1cf58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  attackRange: 0
+  targetGate: {fileID: 0}
+  ownedByThisPlayer: 0
 --- !u!136 &136919640134164390
 CapsuleCollider:
   m_ObjectHideFlags: 1

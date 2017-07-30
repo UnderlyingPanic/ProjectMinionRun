@@ -7,7 +7,8 @@ public class Creep : MonoBehaviour {
     public float moveSpeed;
     public float attackRange;
     public GameObject targetGate;
-    public bool ownedByThisPlayer;
+    public Team team;
+    public Lane lane;
     
 
     private bool attacking;
@@ -16,22 +17,17 @@ public class Creep : MonoBehaviour {
     private List<GameObject> enemiesInSights = new List<GameObject>();
     private GameObject currentTarget;
     private Animator animator;
-
+    private Waypoint currentWaypoint;
 
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
-        currentTarget = targetGate;
-        sightRange = GetComponent<BoxCollider>().size.x / 2;
-
-        print(sightRange);
+        InitialiseCreep();
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-
-        print(attacking);
 
         animator.SetBool("isRunning", false);
         if (Vector3.Distance(this.transform.position, currentTarget.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) > attackRange && !attacking)
@@ -49,8 +45,6 @@ public class Creep : MonoBehaviour {
     private void FixedUpdate()
     {
        
-        Debug.Log(name + "- " + currentTarget);
-
         //Do this RIGHT AT THE END
         enemiesInSights.Clear();
     }
@@ -61,6 +55,7 @@ public class Creep : MonoBehaviour {
         var targetPoint = currentTarget.transform.position;
         var targetRotation = Quaternion.LookRotation(targetPoint - transform.position, Vector3.up);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 2.0f);
+        transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f)); //clamps to only Y rotation
 
         //Move Forward (duh)
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
@@ -81,7 +76,7 @@ public class Creep : MonoBehaviour {
         //Currently we need to "foreach" them to see which is closest
         if (other.GetComponent<Pylon>())
         {
-            if (other.GetComponent<Pylon>().ownedByThisPlayer != this.ownedByThisPlayer)
+            if (other.GetComponent<Pylon>().team != this.team)
             {
                 if (enemiesInSights.Contains(other.gameObject))
                 {
@@ -95,7 +90,7 @@ public class Creep : MonoBehaviour {
         }
         if (other.GetComponent<Creep>())
         {
-            if (other.GetComponent<Creep>().ownedByThisPlayer != this.ownedByThisPlayer)
+            if (other.GetComponent<Creep>().team != this.team)
             {
 
                 if (enemiesInSights.Contains(other.gameObject))
@@ -142,5 +137,28 @@ public class Creep : MonoBehaviour {
     public void SetAttackingFalse()
     {
         attacking = false;
+    }
+
+    public void AssignLane (Lane laneToAssign)
+    {
+        lane = laneToAssign;
+    }
+
+    private void InitialiseCreep ()
+    {
+        sightRange = GetComponent<BoxCollider>().size.x / 2;
+        Waypoint[] waypoints = GameObject.FindObjectsOfType<Waypoint>();
+
+        if (lane == Lane.mid)
+        {
+            foreach (Waypoint waypoint in waypoints)
+            {
+                if (waypoint.lane == Lane.mid && waypoint.team != team)
+                {
+                    currentTarget = waypoint.gameObject;
+                    currentWaypoint = waypoint;
+                }
+            }
+        }
     }
 }

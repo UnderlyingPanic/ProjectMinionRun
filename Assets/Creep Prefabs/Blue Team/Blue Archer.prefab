@@ -478,6 +478,8 @@ GameObject:
   - component: {fileID: 95194678674014640}
   - component: {fileID: 54488574346008050}
   - component: {fileID: 136329456401546052}
+  - component: {fileID: 65468038436276488}
+  - component: {fileID: 114136434238837468}
   m_Layer: 0
   m_Name: Blue Archer
   m_TagString: Untagged
@@ -1061,6 +1063,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!65 &65468038436276488
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890706120096870}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1.5, z: 20}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!95 &95194678674014640
 Animator:
   serializedVersion: 3
@@ -1078,6 +1092,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114136434238837468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890706120096870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7807dd54576e49d41aecd333bd1cf58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  attackRange: 0
+  targetGate: {fileID: 0}
+  ownedByThisPlayer: 0
 --- !u!136 &136329456401546052
 CapsuleCollider:
   m_ObjectHideFlags: 1
