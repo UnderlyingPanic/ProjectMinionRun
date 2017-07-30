@@ -13,9 +13,10 @@ public class Gate : MonoBehaviour {
     public GameObject swordsman, mage, archer, mountedMage, mountedSwordsman;
     public GameObject spawnPoint;
 
+    
 	// Use this for initialization
 	void Start () {
-        GameObject newUnit = Instantiate(swordsman, spawnPoint.transform.position, Quaternion.identity) as GameObject;
+        GameObject newUnit = Instantiate(mage, spawnPoint.transform.position, Quaternion.identity) as GameObject;
         Creep creep = newUnit.GetComponent<Creep>();
         creep.AssignLane(lane);
 	}

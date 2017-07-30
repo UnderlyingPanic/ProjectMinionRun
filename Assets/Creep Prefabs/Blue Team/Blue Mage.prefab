@@ -267,7 +267,6 @@ GameObject:
   - component: {fileID: 136797393813705574}
   - component: {fileID: 114829688827485910}
   - component: {fileID: 65459467622137506}
-  - component: {fileID: 114813584648341512}
   m_Layer: 0
   m_Name: Blue Mage
   m_TagString: Untagged
@@ -1103,21 +1102,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114813584648341512
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1619184541004558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7807dd54576e49d41aecd333bd1cf58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0
-  attackRange: 0
-  targetGate: {fileID: 0}
-  ownedByThisPlayer: 0
 --- !u!114 &114829688827485910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1130,9 +1114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1.25
-  attackRange: 3
-  targetGate: {fileID: 0}
-  ownedByThisPlayer: 0
+  attackRange: 6
+  team: 0
+  lane: 0
+  attackSpeedMod: 1
+  currentTarget: {fileID: 0}
 --- !u!136 &136797393813705574
 CapsuleCollider:
   m_ObjectHideFlags: 1

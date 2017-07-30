@@ -419,6 +419,7 @@ GameObject:
   - component: {fileID: 54247015792141948}
   - component: {fileID: 136239739908137482}
   - component: {fileID: 114728839244152264}
+  - component: {fileID: 65302309304855454}
   m_Layer: 0
   m_Name: Red Mage
   m_TagString: Untagged
@@ -1072,6 +1073,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!65 &65302309304855454
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1812383316571046}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1.5, z: 20}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!95 &95992077068162632
 Animator:
   serializedVersion: 3
@@ -1100,11 +1113,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7807dd54576e49d41aecd333bd1cf58e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  attackRange: 0
-  targetGate: {fileID: 0}
+  moveSpeed: 1.25
+  attackRange: 6
   team: 1
   lane: 0
+  attackSpeedMod: 1
+  currentTarget: {fileID: 0}
 --- !u!136 &136239739908137482
 CapsuleCollider:
   m_ObjectHideFlags: 1

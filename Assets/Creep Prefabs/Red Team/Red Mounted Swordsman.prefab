@@ -2035,9 +2035,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0
   attackRange: 0
-  targetGate: {fileID: 0}
   team: 1
   lane: 0
+  attackSpeedMod: 1
+  currentTarget: {fileID: 0}
 --- !u!136 &136051780564530166
 CapsuleCollider:
   m_ObjectHideFlags: 1
