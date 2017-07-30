@@ -16,4 +16,18 @@ public class Waypoint : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnDrawGizmos()
+    {
+        if (team == Team.Team1)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(new Vector3(transform.position.x, this.transform.position.y + 3f, this.transform.position.z), new Vector3(5, 5, 5));
+        }
+        if (team == Team.Team2)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireCube(new Vector3(transform.position.x, this.transform.position.y + 3f, this.transform.position.z), new Vector3(5, 5, 5));
+        }
+    }
 }
