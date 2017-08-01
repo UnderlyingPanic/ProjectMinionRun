@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 136797393813705574}
   - component: {fileID: 114829688827485910}
   - component: {fileID: 65459467622137506}
+  - component: {fileID: 114895218724522920}
   m_Layer: 0
   m_Name: Blue Mage
   m_TagString: Untagged
@@ -763,8 +764,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1191062704354206}
-  m_LocalRotation: {x: -0.50000036, y: 0.49999964, z: 0.49999964, w: 0.50000036}
-  m_LocalPosition: {x: 0, y: 0.73484915, z: -0.049094923}
+  m_LocalRotation: {x: -0.50000036, y: 0.4999997, z: 0.4999997, w: 0.50000036}
+  m_LocalPosition: {x: 0.00000033713877, y: 0.73484915, z: -0.04909501}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
   m_Children:
   - {fileID: 4983871881357208}
@@ -793,7 +794,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1619184541004558}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -4.3771954, y: -0.499, z: -9.154853}
+  m_LocalPosition: {x: 6.50969, y: -0.499, z: 10.022798}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4601054944071468}
@@ -1119,6 +1120,20 @@ MonoBehaviour:
   lane: 0
   attackSpeedMod: 1
   currentTarget: {fileID: 0}
+--- !u!114 &114895218724522920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1619184541004558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a151aac0cf31f34bb4a7f3c97bcffef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1603000188774022, guid: c7e3b70fd20c7c24588b1ea3120b2baa, type: 2}
+  offset: {x: 1, y: 0.7, z: 1.3}
+  target: {fileID: 0}
 --- !u!136 &136797393813705574
 CapsuleCollider:
   m_ObjectHideFlags: 1

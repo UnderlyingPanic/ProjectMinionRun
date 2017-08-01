@@ -162,6 +162,11 @@ public class Creep : MonoBehaviour {
     public void AttackTarget(GameObject target)
     {
 
+        if (GetComponent<Mage>())
+        {
+            GetComponent<Mage>().target = currentTarget;
+        }
+
         animator.speed = attackSpeedMod;
 
         int randomNum = Random.Range(0, 2);
