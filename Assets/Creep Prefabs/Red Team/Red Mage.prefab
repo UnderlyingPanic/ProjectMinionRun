@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1603000188774022, guid: c7e3b70fd20c7c24588b1ea3120b2baa, type: 2}
-  offset: {x: 1, y: 0.7, z: 1.3}
+  offset: {x: -0.14, y: 0.9, z: 1.74}
   target: {fileID: 0}
 --- !u!114 &114728839244152264
 MonoBehaviour:

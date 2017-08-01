@@ -20,19 +20,18 @@ public class SpellProjectile : MonoBehaviour {
         Vector3 targetPos = new Vector3(target.position.x, transform.position.y, target.position.z);
         transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
 
+        print(Vector3.Distance(transform.position, target.position));
+
+        if (Vector3.Distance(transform.position, target.position) <= 1f)
+        {
+            Debug.Log("Projectile Hit");
+            Destroy(this.gameObject);
+        }
+
     }
 
     public void SetTarget (GameObject trgt)
     {
         target = trgt.transform;
-    }
-
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject == target.gameObject)
-        {
-            Destroy(this.gameObject);
-            Debug.Log("Enemy hit with spell!");
-        }
     }
 }
