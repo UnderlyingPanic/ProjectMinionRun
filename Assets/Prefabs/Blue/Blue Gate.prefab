@@ -352,3 +352,5 @@ MonoBehaviour:
   mountedSwordsman: {fileID: 1870875750811400, guid: ce89d3eb5d5af5f42b9289bec70a1fed,
     type: 2}
   spawnPoint: {fileID: 1644474695148868}
+  spawnGap: 1
+  waveGap: 10

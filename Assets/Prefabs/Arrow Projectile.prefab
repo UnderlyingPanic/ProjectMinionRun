@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23270795158674256}
   - component: {fileID: 114444046951706218}
   m_Layer: 0
-  m_Name: Spell Projectile
+  m_Name: Arrow Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d0ebf0c9cbaf1804b9075c325df49538, type: 2}
+  - {fileID: 2100000, guid: 2fe6e3d4fc6062c40b2c511e9ae69fde, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f25918b1dcb83f04c88d981577995ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 5
 --- !u!135 &135164776945266584
 SphereCollider:
   m_ObjectHideFlags: 1

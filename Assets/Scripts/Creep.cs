@@ -162,9 +162,9 @@ public class Creep : MonoBehaviour {
     public void AttackTarget(GameObject target)
     {
 
-        if (GetComponent<Mage>())
+        if (GetComponent<ProjectileSpawner>())
         {
-            GetComponent<Mage>().target = currentTarget;
+            GetComponent<ProjectileSpawner>().target = currentTarget;
         }
 
         animator.speed = attackSpeedMod;
@@ -198,6 +198,7 @@ public class Creep : MonoBehaviour {
 
     private void InitialiseCreepPathing () // Set the first Waypoint based on Lane and set the Sight Range
     {
+        
         Waypoint[] waypoints = GameObject.FindObjectsOfType<Waypoint>();
 
         if (lane == Lane.mid)

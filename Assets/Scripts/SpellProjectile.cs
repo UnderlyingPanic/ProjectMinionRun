@@ -20,11 +20,9 @@ public class SpellProjectile : MonoBehaviour {
         Vector3 targetPos = new Vector3(target.position.x, transform.position.y, target.position.z);
         transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
 
-        print(Vector3.Distance(transform.position, target.position));
-
-        if (Vector3.Distance(transform.position, target.position) <= 1f)
+        
+        if (Vector3.Distance(transform.position, target.position) <= 1.25f)
         {
-            Debug.Log("Projectile Hit");
             Destroy(this.gameObject);
         }
 
