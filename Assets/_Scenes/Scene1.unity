@@ -151,6 +151,10 @@ Prefab:
       propertyPath: m_Name
       value: Red Team Mid Pylon 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
   m_IsPrefabParent: 0
@@ -215,7 +219,27 @@ Prefab:
     - target: {fileID: 114135783576446834, guid: 8e3e21bad3cd47943b8ff6258ae0490a,
         type: 2}
       propertyPath: waveGap
-      value: 10
+      value: 1e+11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832156576123410, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108870464348604, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028505159525308, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1719610956821324, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937292733989786, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
@@ -419,6 +443,10 @@ Prefab:
     - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
       propertyPath: m_Name
       value: Blue Team Mid Pylon 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
@@ -638,6 +666,10 @@ Prefab:
       propertyPath: m_Name
       value: Red Team Mid Pylon 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
   m_IsPrefabParent: 0
@@ -688,6 +720,10 @@ Prefab:
     - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
       propertyPath: m_Name
       value: Blue Team Mid Pylon 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
@@ -899,6 +935,30 @@ Prefab:
       propertyPath: waveGap
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1719610956821324, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028505159525308, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832156576123410, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108870464348604, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937292733989786, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937292733989786, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
   m_IsPrefabParent: 0
@@ -1071,6 +1131,30 @@ Prefab:
       propertyPath: waveGap
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1108870464348604, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937292733989786, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832156576123410, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1719610956821324, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028505159525308, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937292733989786, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
   m_IsPrefabParent: 0
@@ -1232,6 +1316,10 @@ Prefab:
       propertyPath: m_Name
       value: Red Team Mid Pylon 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
   m_IsPrefabParent: 0
@@ -1283,6 +1371,10 @@ Prefab:
       propertyPath: m_Name
       value: Red Team Mid Pylon 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
   m_IsPrefabParent: 0
@@ -1328,6 +1420,10 @@ Prefab:
     - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
       propertyPath: m_Name
       value: Blue Team Mid Pylon 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
@@ -1408,6 +1504,30 @@ Prefab:
       propertyPath: waveGap
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1964289957411088, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794454896186270, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820870175063072, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644474695148868, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346212463972854, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820870175063072, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
   m_IsPrefabParent: 0
@@ -1483,6 +1603,30 @@ Prefab:
       propertyPath: waveGap
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1794454896186270, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964289957411088, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644474695148868, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346212463972854, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820870175063072, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820870175063072, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
   m_IsPrefabParent: 0
@@ -1544,6 +1688,31 @@ Prefab:
       propertyPath: spawnGap
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1346212463972854, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820870175063072, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964289957411088, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644474695148868, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794454896186270, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783986522617674, guid: a64be522feb4cdc499c7bea6e12cbf75,
+        type: 2}
+      propertyPath: waveGap
+      value: 1e+11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
   m_IsPrefabParent: 0
@@ -1594,6 +1763,10 @@ Prefab:
     - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
       propertyPath: m_Name
       value: Blue Team Mid Pylon 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}

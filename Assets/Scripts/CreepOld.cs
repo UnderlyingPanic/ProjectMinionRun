@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
-public class Creep : MonoBehaviour {
+public class CreepOld : MonoBehaviour {
 
     public float moveSpeed;
     public float attackRange;
@@ -31,14 +30,6 @@ public class Creep : MonoBehaviour {
         arrayI = 0;
         sightRange = GetComponent<BoxCollider>().size.x / 2;
 
-        foreach (Pylon pylon in GameObject.FindObjectsOfType<Pylon>())
-        {
-            if (pylon.team != this.team)
-            {
-                enemiesInSights.Add(pylon.gameObject);
-            }
-        }
-
         InitialiseCreepPathing();
     }
 	
@@ -47,20 +38,15 @@ public class Creep : MonoBehaviour {
     {
         animator.speed = 1;
 
-        enemiesInSights.RemoveAll(item => item == null);
-
-        currentTarget = ChooseTarget();
+        var targetPoint = currentTarget.transform.position;
+        var targetRotation = Quaternion.LookRotation(targetPoint - transform.position, Vector3.up);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 2.0f);
+        transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f)); //clamps to only Y rotation
 
         if (currentTarget == null)
         {
-            enemiesInSights.Remove(currentTarget);
-            currentTarget = ChooseTarget();
+            currentTarget = currentWaypoint;
         }
-
-        var targetPoint = currentTarget.transform.position;
-        var targetRotation = Quaternion.LookRotation(targetPoint - transform.position, Vector3.up);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5.0f);
-        transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f)); //clamps to only Y rotation
 
         animator.SetBool("isRunning", false);
         if (Vector3.Distance(this.transform.position, currentTarget.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) > attackRange && !attacking)
@@ -82,7 +68,7 @@ public class Creep : MonoBehaviour {
     {
             
         //Do this RIGHT AT THE END
-        
+        enemiesInSights.Clear();
     }
 
     private void MoveToCurrentTarget()
@@ -117,7 +103,7 @@ public class Creep : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         //Create a list of attackable units inside the collider
         //We need this list so we can "foreach" them.
@@ -157,26 +143,17 @@ public class Creep : MonoBehaviour {
         
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (enemiesInSights.Contains(other.gameObject))
-        {
-            enemiesInSights.Remove(other.gameObject);
-        }
-    }
-
     private GameObject ChooseTarget ()
     {
-
-        GameObject closestTarget = currentWaypoint;
+        GameObject closestTarget = currentTarget;
 
         foreach (GameObject enemy in enemiesInSights)
         {
-           if  (Vector3.Distance(this.transform.position, enemy.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) < Vector3.Distance(this.transform.position, closestTarget.transform.position) &&
+            if (Vector3.Distance(this.transform.position, enemy.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) < Vector3.Distance(this.transform.position, closestTarget.transform.position) &&
                 Vector3.Distance(this.transform.position, enemy.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) < sightRange)
             {
                 closestTarget = enemy;
-            }         
+            }
         }
 
         return closestTarget;

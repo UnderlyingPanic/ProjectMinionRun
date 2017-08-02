@@ -7,6 +7,7 @@ public class SpellProjectile : MonoBehaviour {
     public float moveSpeed;
     
     private Transform target;
+    private Vector3 targetPos;
     
 	// Use this for initialization
 	void Start () {
@@ -16,8 +17,13 @@ public class SpellProjectile : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if (target == null)
+        {
+            Destroy(this.gameObject);
+        }
+
         float step = moveSpeed * Time.deltaTime;
-        Vector3 targetPos = new Vector3(target.position.x, transform.position.y, target.position.z);
+        targetPos = new Vector3(target.position.x, transform.position.y, target.position.z);
         transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
 
         
