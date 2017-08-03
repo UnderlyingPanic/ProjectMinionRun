@@ -10,12 +10,13 @@ public class Creep : MonoBehaviour {
     public Team team;
     public Lane lane;
     public float attackSpeedMod = 1f;
+    public float damage;
 
     private bool attacking;
 
     private int arrayI;
     private float sightRange;
-    private List<GameObject> enemiesInSights = new List<GameObject>();
+    public List<GameObject> enemiesInSights = new List<GameObject>();
     public GameObject currentTarget;
     private Animator animator;
     private GameObject currentWaypoint;
@@ -31,14 +32,6 @@ public class Creep : MonoBehaviour {
         arrayI = 0;
         sightRange = GetComponent<BoxCollider>().size.x / 2;
 
-        foreach (Pylon pylon in GameObject.FindObjectsOfType<Pylon>())
-        {
-            if (pylon.team != this.team)
-            {
-                enemiesInSights.Add(pylon.gameObject);
-            }
-        }
-
         InitialiseCreepPathing();
     }
 	
@@ -47,13 +40,8 @@ public class Creep : MonoBehaviour {
     {
         animator.speed = 1;
 
-        enemiesInSights.RemoveAll(item => item == null);
-
-        currentTarget = ChooseTarget();
-
         if (currentTarget == null)
         {
-            enemiesInSights.Remove(currentTarget);
             currentTarget = ChooseTarget();
         }
 
@@ -80,9 +68,9 @@ public class Creep : MonoBehaviour {
     //Target Detection has to go in Fixed Update, because OnCollisionStay syncs with it.
     private void FixedUpdate()
     {
-            
-        //Do this RIGHT AT THE END
-        
+
+        enemiesInSights.RemoveAll(item => item == null);
+
     }
 
     private void MoveToCurrentTarget()
@@ -152,9 +140,7 @@ public class Creep : MonoBehaviour {
             }
         }
 
-        currentTarget = ChooseTarget();
-
-        
+        currentTarget = ChooseTarget();        
     }
 
     private void OnTriggerExit(Collider other)
@@ -167,16 +153,23 @@ public class Creep : MonoBehaviour {
 
     private GameObject ChooseTarget ()
     {
-
+               
         GameObject closestTarget = currentWaypoint;
 
         foreach (GameObject enemy in enemiesInSights)
         {
-           if  (Vector3.Distance(this.transform.position, enemy.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) < Vector3.Distance(this.transform.position, closestTarget.transform.position) &&
-                Vector3.Distance(this.transform.position, enemy.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) < sightRange)
+            if (enemy != null)
             {
-                closestTarget = enemy;
-            }         
+                if (closestTarget == currentWaypoint)
+                {
+                    closestTarget = enemy;
+                }
+                if (Vector3.Distance(this.transform.position, enemy.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) < Vector3.Distance(this.transform.position, closestTarget.transform.position) &&
+                    Vector3.Distance(this.transform.position, enemy.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) < sightRange)
+                {
+                    closestTarget = enemy;
+                }
+            }
         }
 
         return closestTarget;
@@ -242,6 +235,23 @@ public class Creep : MonoBehaviour {
 
             currentTarget = pathToTake[arrayI];
             currentWaypoint = currentTarget;
+        }
+    }
+
+    public void DealDamage()
+    {
+        Health enemyHealth;
+
+        if (!currentTarget.GetComponent<Health>())
+        {
+            Debug.LogWarning(name + " has tried to deal damage to " + currentTarget + " but it doesn't have health");
+            return;
+        }
+
+        if (currentTarget.GetComponent<Health>())
+        {
+            enemyHealth = currentTarget.GetComponent<Health>();
+            enemyHealth.TakeDamage(damage);
         }
     }
 }

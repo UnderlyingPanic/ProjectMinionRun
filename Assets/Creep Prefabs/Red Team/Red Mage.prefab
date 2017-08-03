@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 114728839244152264}
   - component: {fileID: 114037239789076946}
   - component: {fileID: 65302309304855454}
+  - component: {fileID: 114695806906858808}
   m_Layer: 0
   m_Name: Red Mage
   m_TagString: Untagged
@@ -1117,6 +1118,20 @@ MonoBehaviour:
   projectile: {fileID: 1603000188774022, guid: c7e3b70fd20c7c24588b1ea3120b2baa, type: 2}
   offset: {x: -0.14, y: 0.9, z: 1.74}
   target: {fileID: 0}
+--- !u!114 &114695806906858808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1812383316571046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currHealth: 100
+  healthAsDecimal: 100
 --- !u!114 &114728839244152264
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1133,6 +1148,7 @@ MonoBehaviour:
   team: 1
   lane: 0
   attackSpeedMod: 1
+  damage: 5
   currentTarget: {fileID: 0}
 --- !u!136 &136239739908137482
 CapsuleCollider:

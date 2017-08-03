@@ -9,6 +9,7 @@ public class ProjectileSpawner : MonoBehaviour {
     [HideInInspector] 
     public GameObject target;
 
+    private float damage;
     private GameObject spawnPoint;
     
 
@@ -20,13 +21,19 @@ public class ProjectileSpawner : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
+        damage = GetComponent<Creep>().damage;
 	}
 
     public void SpawnProjectile()
     {
+        if (target == null)
+        {
+            return;
+        }
+
         GameObject newProjectile = Instantiate(projectile, spawnPoint.transform.position, Quaternion.identity);
         newProjectile.GetComponent<SpellProjectile>().SetTarget(target);
+        newProjectile.GetComponent<SpellProjectile>().damage = damage;
     }
 
     private void InitialiseSpawnPoint()

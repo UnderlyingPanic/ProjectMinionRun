@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 65468038436276488}
   - component: {fileID: 114136434238837468}
   - component: {fileID: 114603322134697146}
+  - component: {fileID: 114850491244929930}
   m_Layer: 0
   m_Name: Blue Archer
   m_TagString: Untagged
@@ -1109,6 +1110,7 @@ MonoBehaviour:
   team: 0
   lane: 0
   attackSpeedMod: 1
+  damage: 5
   currentTarget: {fileID: 0}
 --- !u!114 &114603322134697146
 MonoBehaviour:
@@ -1124,6 +1126,20 @@ MonoBehaviour:
   projectile: {fileID: 1603000188774022, guid: dd24472dd77e54b4793ae26b84790bd0, type: 2}
   offset: {x: -0.065, y: 1.216, z: 0.811}
   target: {fileID: 0}
+--- !u!114 &114850491244929930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890706120096870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currHealth: 100
+  healthAsDecimal: 100
 --- !u!136 &136329456401546052
 CapsuleCollider:
   m_ObjectHideFlags: 1

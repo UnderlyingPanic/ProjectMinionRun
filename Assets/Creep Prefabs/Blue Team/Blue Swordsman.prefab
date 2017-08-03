@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 136190695213686702}
   - component: {fileID: 114278428762367322}
   - component: {fileID: 65367522502486414}
+  - component: {fileID: 114268095335086218}
   m_Layer: 0
   m_Name: Blue Swordsman
   m_TagString: Untagged
@@ -1162,6 +1163,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114268095335086218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1458715896894060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currHealth: 100
+  healthAsDecimal: 100
 --- !u!114 &114278428762367322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1178,6 +1193,7 @@ MonoBehaviour:
   team: 0
   lane: 0
   attackSpeedMod: 1
+  damage: 5
   currentTarget: {fileID: 0}
 --- !u!136 &136190695213686702
 CapsuleCollider:

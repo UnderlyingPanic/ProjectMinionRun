@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 114829688827485910}
   - component: {fileID: 65459467622137506}
   - component: {fileID: 114895218724522920}
+  - component: {fileID: 114750163175604482}
   m_Layer: 0
   m_Name: Blue Mage
   m_TagString: Untagged
@@ -1103,6 +1104,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114750163175604482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1619184541004558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currHealth: 100
+  healthAsDecimal: 100
 --- !u!114 &114829688827485910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1119,6 +1134,7 @@ MonoBehaviour:
   team: 0
   lane: 0
   attackSpeedMod: 1
+  damage: 5
   currentTarget: {fileID: 0}
 --- !u!114 &114895218724522920
 MonoBehaviour:

@@ -705,6 +705,7 @@ GameObject:
   - component: {fileID: 136919640134164390}
   - component: {fileID: 65895545887364496}
   - component: {fileID: 114757093318719100}
+  - component: {fileID: 114381769433880550}
   m_Layer: 0
   m_Name: Blue Mounted Mage
   m_TagString: Untagged
@@ -1599,7 +1600,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1060329776343004}
-  m_LocalRotation: {x: 0.61767566, y: 0.71388996, z: -0.060704775, w: 0.32427278}
+  m_LocalRotation: {x: 0.6176757, y: 0.71389, z: -0.06070478, w: 0.3242728}
   m_LocalPosition: {x: -0.10147072, y: -0.00000009689331, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2005,6 +2006,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114381769433880550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767636779532678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currHealth: 100
+  healthAsDecimal: 100
 --- !u!114 &114757093318719100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2021,6 +2036,7 @@ MonoBehaviour:
   team: 0
   lane: 0
   attackSpeedMod: 1
+  damage: 0
   currentTarget: {fileID: 0}
 --- !u!136 &136919640134164390
 CapsuleCollider:
