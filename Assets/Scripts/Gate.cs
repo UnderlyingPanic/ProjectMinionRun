@@ -13,6 +13,7 @@ public class Gate : MonoBehaviour {
 
     public GameObject swordsman, mage, archer, mountedMage, mountedSwordsman;
     public GameObject spawnPoint;
+    public Transform parent;
 
     private List<GameObject> spawnList = new List<GameObject>();
     public float spawnGap; //Gap between each minion in a wave
@@ -73,5 +74,6 @@ public class Gate : MonoBehaviour {
         GameObject newUnit = Instantiate(unit, spawnPoint.transform.position, Quaternion.identity) as GameObject;
         Creep creep = newUnit.GetComponent<Creep>();
         creep.AssignLane(lane);
+        creep.transform.parent = parent;
     }
 }

@@ -10,6 +10,12 @@ public class GameManager : MonoBehaviour {
     public float[] team1MaxHP;
     public float[] team2MaxHP;
 
+    public float[] team1AttackSpeedMod;
+    public float[] team2AttackSpeedMod;
+
+    public float[] team1MoveSpeed;
+    public float[] team2MoveSpeed;
+
     //Top Melee, Top Mage, Top Archer, Mid Melee, Mid Mage, Mid Archer, Bot Melee, Bot Mage, Bot Archer
     public int[] unitIndex;
 
@@ -20,7 +26,8 @@ public class GameManager : MonoBehaviour {
     {
         InitialiseUnitDamageArray();
         InitialiseUnitHPArray();
-
+        InitialiseAttackSpeedArray();
+        InitialiseMoveSpeedArray();
     }
 	
 	// Update is called once per frame
@@ -83,6 +90,60 @@ public class GameManager : MonoBehaviour {
             z++;
         }
 
+    }
+
+    private void InitialiseAttackSpeedArray()
+    {
+        int i = 0;
+
+        foreach (GameObject unit in units)
+        {
+            Creep creep = unit.GetComponent<Creep>();
+            team1AttackSpeedMod[i] = creep.attackSpeedMod;
+            i++;
+        }
+
+        team1AttackSpeedMod[3] = team1AttackSpeedMod[0];
+        team1AttackSpeedMod[4] = team1AttackSpeedMod[1];
+        team1AttackSpeedMod[5] = team1AttackSpeedMod[2];
+        team1AttackSpeedMod[6] = team1AttackSpeedMod[0];
+        team1AttackSpeedMod[7] = team1AttackSpeedMod[1];
+        team1AttackSpeedMod[8] = team1AttackSpeedMod[2];
+
+        int z = 0;
+
+        foreach (float x in team1AttackSpeedMod)
+        {
+            team2AttackSpeedMod[z] = x;
+            z++;
+        }
+    }
+
+    private void InitialiseMoveSpeedArray()
+    {
+        int i = 0;
+
+        foreach (GameObject unit in units)
+        {
+            Creep creep = unit.GetComponent<Creep>();
+            team1MoveSpeed[i] = creep.moveSpeed;
+            i++;
+        }
+
+        team1MoveSpeed[3] = team1MoveSpeed[0];
+        team1MoveSpeed[4] = team1MoveSpeed[1];
+        team1MoveSpeed[5] = team1MoveSpeed[2];
+        team1MoveSpeed[6] = team1MoveSpeed[0];
+        team1MoveSpeed[7] = team1MoveSpeed[1];
+        team1MoveSpeed[8] = team1MoveSpeed[2];
+
+        int z = 0;
+
+        foreach (float x in team1MoveSpeed)
+        {
+            team2MoveSpeed[z] = x;
+            z++;
+        }
     }
 
     public float PassOutDamage(Unit unitType, Lane lane, Team team)
@@ -153,5 +214,75 @@ public class GameManager : MonoBehaviour {
         }
 
         throw new UnityException("Game Manager tried to pass out Health and failed miserably.");
+    }
+
+    public float PassOutAtkSpd(Unit unitType, Lane lane, Team team)
+    {
+        int i = 1;
+
+        if (unitType == Unit.mage)
+        {
+            i = 2;
+        }
+        if (unitType == Unit.archer)
+        {
+            i = 3;
+        }
+
+        if (lane == Lane.mid)
+        {
+            i += 3;
+        }
+        if (lane == Lane.bottom)
+        {
+            i += 6;
+        }
+
+
+        if (team == Team.Team1)
+        {
+            return team1AttackSpeedMod[i - 1];
+        }
+        if (team == Team.Team2)
+        {
+            return team2AttackSpeedMod[i - 1];
+        }
+
+        throw new UnityException("Game Manager tried to pass out Damage and failed miserably.");
+    }
+
+    public float PassOutMoveSpeed(Unit unitType, Lane lane, Team team)
+    {
+        int i = 1;
+
+        if (unitType == Unit.mage)
+        {
+            i = 2;
+        }
+        if (unitType == Unit.archer)
+        {
+            i = 3;
+        }
+
+        if (lane == Lane.mid)
+        {
+            i += 3;
+        }
+        if (lane == Lane.bottom)
+        {
+            i += 6;
+        }
+
+
+        if (team == Team.Team1)
+        {
+            return team1MoveSpeed[i - 1];
+        }
+        if (team == Team.Team2)
+        {
+            return team2MoveSpeed[i - 1];
+        }
+
+        throw new UnityException("Game Manager tried to pass out Damage and failed miserably.");
     }
 }

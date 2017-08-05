@@ -25,6 +25,8 @@ public class Creep : MonoBehaviour {
     private GameObject[] pathToTake;
     private GameManager gameManager;
 
+     
+
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
@@ -263,5 +265,7 @@ public class Creep : MonoBehaviour {
         damage = gameManager.PassOutDamage(type, lane, team);
         GetComponent<Health>().maxHealth = gameManager.PassOutHealth(type,lane,team);
         GetComponent<Health>().currHealth = gameManager.PassOutHealth(type, lane, team);
+        moveSpeed = gameManager.PassOutMoveSpeed(type, lane, team);
+        attackSpeedMod = gameManager.PassOutAtkSpd(type, lane, team);
     }
 }
