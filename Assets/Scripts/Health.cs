@@ -21,6 +21,7 @@ public class Health : MonoBehaviour {
 
         if (currHealth <= 0)
         {
+            animator.SetBool("isDead", true);
             DestroyDeadUnit();
         }
 	}

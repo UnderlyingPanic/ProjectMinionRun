@@ -1107,10 +1107,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   attackRange: 10
+  type: 2
   team: 0
   lane: 0
   attackSpeedMod: 1
-  damage: 5
+  damage: 10
+  enemiesInSights: []
   currentTarget: {fileID: 0}
 --- !u!114 &114603322134697146
 MonoBehaviour:

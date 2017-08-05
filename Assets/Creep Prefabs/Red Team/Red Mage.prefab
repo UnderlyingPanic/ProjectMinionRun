@@ -1145,10 +1145,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   attackRange: 6
+  type: 1
   team: 1
   lane: 0
   attackSpeedMod: 1
   damage: 5
+  enemiesInSights: []
   currentTarget: {fileID: 0}
 --- !u!136 &136239739908137482
 CapsuleCollider:

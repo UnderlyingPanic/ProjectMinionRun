@@ -7,6 +7,7 @@ public class Creep : MonoBehaviour {
 
     public float moveSpeed;
     public float attackRange;
+    public Unit type;
     public Team team;
     public Lane lane;
     public float attackSpeedMod = 1f;
@@ -22,17 +23,19 @@ public class Creep : MonoBehaviour {
     private GameObject currentWaypoint;
     private WaypointManager waypointManager;
     private GameObject[] pathToTake;
-   
+    private GameManager gameManager;
 
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
+        gameManager = FindObjectOfType<GameManager>();
 
         waypointManager = FindObjectOfType<WaypointManager>();
         arrayI = 0;
         sightRange = GetComponent<BoxCollider>().size.x / 2;
 
         InitialiseCreepPathing();
+        InitialiseCreepStats();
     }
 	
 	// Update is called once per frame
@@ -253,5 +256,10 @@ public class Creep : MonoBehaviour {
             enemyHealth = currentTarget.GetComponent<Health>();
             enemyHealth.TakeDamage(damage);
         }
+    }
+
+    private void InitialiseCreepStats()
+    {
+        damage = gameManager.PassOutDamage(type, lane, team);
     }
 }
