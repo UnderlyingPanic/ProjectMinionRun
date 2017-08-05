@@ -261,5 +261,7 @@ public class Creep : MonoBehaviour {
     private void InitialiseCreepStats()
     {
         damage = gameManager.PassOutDamage(type, lane, team);
+        GetComponent<Health>().maxHealth = gameManager.PassOutHealth(type,lane,team);
+        GetComponent<Health>().currHealth = gameManager.PassOutHealth(type, lane, team);
     }
 }

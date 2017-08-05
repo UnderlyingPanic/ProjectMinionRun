@@ -1176,10 +1176,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   attackRange: 0.75
+  type: 0
   team: 1
   lane: 0
   attackSpeedMod: 1
   damage: 5
+  enemiesInSights: []
   currentTarget: {fileID: 0}
 --- !u!114 &114061134070258070
 MonoBehaviour:
@@ -1192,9 +1194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currHealth: 100
-  healthAsDecimal: 100
+  maxHealth: 1
+  currHealth: 1
+  healthAsDecimal: 1
 --- !u!136 &136712424322343038
 CapsuleCollider:
   m_ObjectHideFlags: 1

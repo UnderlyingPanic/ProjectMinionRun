@@ -71,6 +71,26 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+  team1MaxHP:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  team2MaxHP:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   unitIndex: 
   units:
   - {fileID: 1458715896894060, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
