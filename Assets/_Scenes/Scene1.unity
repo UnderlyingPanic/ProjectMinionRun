@@ -1659,6 +1659,14 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 85.4
       objectReference: {fileID: 0}
+    - target: {fileID: 4089274763383962, guid: 4d323756a10bf9b46a555e280f2a90bc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4089274763383962, guid: 4d323756a10bf9b46a555e280f2a90bc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d323756a10bf9b46a555e280f2a90bc, type: 2}
   m_IsPrefabParent: 0
@@ -3394,7 +3402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1020446351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5544,6 +5552,7 @@ GameObject:
   - component: {fileID: 1459573433}
   - component: {fileID: 1459573432}
   - component: {fileID: 1459573431}
+  - component: {fileID: 1459573436}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5619,13 +5628,30 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1459573430}
-  m_LocalRotation: {x: 0.26964542, y: 0.36759043, z: -0.1122516, w: 0.88293165}
-  m_LocalPosition: {x: -90.6295, y: 9.6, z: -90.569496}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 175, z: -175}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &1459573436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459573430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e0adb2163ed0ee459b2e854549d76e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minScroll: 10
+  maxScroll: 120
+  zoomSpeed: 5
+  scrollSpeed: 0.5
+  verticalScrollPercentage: 10
+  horizontalScrollPercentage: 10
 --- !u!4 &1471944202 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4178676167102132, guid: a64be522feb4cdc499c7bea6e12cbf75,

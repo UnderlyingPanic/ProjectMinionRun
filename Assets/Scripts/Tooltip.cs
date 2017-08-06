@@ -30,7 +30,6 @@ public class Tooltip : MonoBehaviour {
 
     public void InstantiateTooltip()
     {
-        print("Mouse Over");
         GameObject newToolTip = Instantiate(this.gameObject, GameObject.Find("Research Trees UI").transform);
     }
 
