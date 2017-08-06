@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 222873385507598666}
   - component: {fileID: 114097258334017394}
   - component: {fileID: 114430279329650674}
+  - component: {fileID: 114311184890210250}
+  - component: {fileID: 114596317808598568}
   m_Layer: 5
   m_Name: Tooltip
   m_TagString: Untagged
@@ -90,6 +92,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114311184890210250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521100866769106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
 --- !u!114 &114430279329650674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,6 +120,28 @@ MonoBehaviour:
   description: {fileID: 114720938662796796}
   canvas: {fileID: 0}
   offset: {x: 100, y: -70}
+--- !u!114 &114596317808598568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521100866769106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 10
+    m_Right: 10
+    m_Top: 10
+    m_Bottom: 10
+  m_ChildAlignment: 4
+  m_Spacing: 5
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
 --- !u!114 &114647459662160566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,7 +174,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vampirism
+  m_Text: Intermediate Time Dilation
 --- !u!114 &114720938662796796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,8 +207,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: All minions now heal for 200% of damage dealt (Requires Rank 3 "Blood Arrow",
-    Rank 3 "Life Steal" and Rank 3 "Life from Blood").
+  m_Text: Attack Speed increased by 5% per rank
 --- !u!222 &222237585081185680
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -226,7 +262,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 605, y: -758}
-  m_SizeDelta: {x: 252.3, y: 170.64}
+  m_SizeDelta: {x: 400, y: 170.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224851527845826280
 RectTransform:

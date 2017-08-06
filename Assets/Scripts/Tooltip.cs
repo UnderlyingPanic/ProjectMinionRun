@@ -10,10 +10,12 @@ public class Tooltip : MonoBehaviour {
     private Vector2 ttPos;
     public GameObject canvas;
     public Vector2 offset;
+   
 
     // Use this for initialization
-    void Start () {
-                
+    void Start()
+    {
+        
     }
 	
 	// Update is called once per frame
@@ -21,6 +23,8 @@ public class Tooltip : MonoBehaviour {
         ttPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y) + offset;
 
         transform.position = ttPos;
+
+        
         
     }
 
