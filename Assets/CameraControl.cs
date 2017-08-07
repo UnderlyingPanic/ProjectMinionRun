@@ -14,8 +14,7 @@ public class CameraControl : MonoBehaviour {
 
     private float screenWidth;
     private float screenHeight;
-    private float hScrollSens;
-    private float vScrollSens;
+
     
 
     // Use this for initialization
@@ -23,8 +22,6 @@ public class CameraControl : MonoBehaviour {
         screenWidth = Screen.width;
         screenHeight = Screen.height;
 
-        vScrollSens = (verticalScrollPercentage / 100);
-        hScrollSens = (horizontalScrollPercentage / 100);
     }
 	
 	// Update is called once per frame
@@ -43,26 +40,26 @@ public class CameraControl : MonoBehaviour {
 
 
 
-        if (Input.mousePosition.x < (screenWidth * hScrollSens))
+        if (Input.mousePosition.x < (screenWidth * 0.1f))
         {
             
             transform.Translate(Vector3.left * scrollSpeed);
             
 
         }
-        if (Input.mousePosition.x > (screenWidth * (1-hScrollSens)))
+        if (Input.mousePosition.x > (screenWidth * 0.9f))
         {
             
             transform.Translate(Vector3.left * -scrollSpeed);
             
         }
-        if (Input.mousePosition.y < (screenHeight * vScrollSens))
+        if (Input.mousePosition.y < (screenHeight * 0.1f))
         {
            
             transform.Translate(Vector3.forward * -scrollSpeed, Space.World);
             
         }
-        if (Input.mousePosition.y > (screenHeight * (1 - vScrollSens)))
+        if (Input.mousePosition.y > (screenHeight *  0.9f))
         {
             
             transform.Translate(Vector3.forward * scrollSpeed, Space.World); 

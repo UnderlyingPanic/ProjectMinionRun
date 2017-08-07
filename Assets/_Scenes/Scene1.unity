@@ -193,11 +193,11 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 404067782}
+    m_TransformParent: {fileID: 522737159}
     m_Modifications:
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 43
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.y
@@ -205,7 +205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 37
+      value: 103.6
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalRotation.x
@@ -225,7 +225,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_Name
@@ -267,6 +267,30 @@ GameObject:
   m_PrefabParentObject: {fileID: 1901035536247902, guid: 4d323756a10bf9b46a555e280f2a90bc,
     type: 2}
   m_PrefabInternal: {fileID: 617396716}
+--- !u!1 &97711207 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 923892442}
+--- !u!4 &97711208 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 923892442}
+--- !u!114 &97711209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 97711207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1001 &100395827
 Prefab:
   m_ObjectHideFlags: 0
@@ -352,6 +376,104 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &131202908
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 404067782}
+    m_Modifications:
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Name
+      value: Red Team Mid Pylon 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &131202909 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 131202908}
+--- !u!1 &131202910 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 131202908}
+--- !u!114 &131202911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131202910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
+--- !u!1 &134512249 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 475224160}
+--- !u!4 &134512250 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 475224160}
+--- !u!114 &134512251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 134512249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1 &141580974
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +862,54 @@ Transform:
   m_PrefabParentObject: {fileID: 4930665745280606, guid: 8e3e21bad3cd47943b8ff6258ae0490a,
     type: 2}
   m_PrefabInternal: {fileID: 100395827}
+--- !u!1 &219270926 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 572368245}
+--- !u!4 &219270927 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 572368245}
+--- !u!114 &219270928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 219270926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
+--- !u!1 &224011381 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 400038018}
+--- !u!4 &224011382 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 400038018}
+--- !u!114 &224011383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 224011381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1 &232170503 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1972856484912574, guid: 4d323756a10bf9b46a555e280f2a90bc,
@@ -861,6 +1031,84 @@ GameObject:
   m_PrefabParentObject: {fileID: 1512085030314694, guid: 4d323756a10bf9b46a555e280f2a90bc,
     type: 2}
   m_PrefabInternal: {fileID: 617396716}
+--- !u!1001 &318964243
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 522737159}
+    m_Modifications:
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.34056783
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.94022
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Name
+      value: Blue Team Mid Pylon 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -39.823
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &318964244 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 318964243}
+--- !u!1 &318964245 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 318964243}
+--- !u!114 &318964246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318964245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1 &328383773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1640,134 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+--- !u!1001 &395014324
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 404067782}
+    m_Modifications:
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Name
+      value: Red Team Mid Pylon 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &395014325 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 395014324}
+--- !u!1 &395014326 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 395014324}
+--- !u!114 &395014327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 395014326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
+--- !u!1001 &400038018
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2122355592}
+    m_Modifications:
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Name
+      value: Blue Team Mid Pylon 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &404067781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,10 +1793,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 190955124}
-  - {fileID: 32489676}
-  - {fileID: 1640914880}
-  - {fileID: 863560569}
+  - {fileID: 395014325}
+  - {fileID: 2106238871}
+  - {fileID: 1980899550}
+  - {fileID: 131202909}
   - {fileID: 1825563912}
   - {fileID: 678201342}
   - {fileID: 876932948}
@@ -1527,6 +1903,282 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 417362137}
+--- !u!1001 &418382063
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2122355592}
+    m_Modifications:
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.35710385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.93406475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Name
+      value: Red Team Mid Pylon 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -41.845
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &475224160
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2122355592}
+    m_Modifications:
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Name
+      value: Blue Team Mid Pylon 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &510057417
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2122355592}
+    m_Modifications:
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.35710385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.93406475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Name
+      value: Red Team Mid Pylon 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -41.845
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &522737158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 522737159}
+  m_Layer: 0
+  m_Name: Top
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &522737159
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 522737158}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 32489676}
+  - {fileID: 190955124}
+  - {fileID: 2071077681}
+  - {fileID: 318964244}
+  - {fileID: 1640914880}
+  - {fileID: 660266263}
+  - {fileID: 863560569}
+  - {fileID: 658205855}
+  m_Father: {fileID: 925442609}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &527593803 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 510057417}
+--- !u!4 &527593804 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 510057417}
+--- !u!114 &527593805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 527593803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
+--- !u!1001 &572368245
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2122355592}
+    m_Modifications:
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.35710385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.93406475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Name
+      value: Red Team Mid Pylon 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -41.845
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &573450171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,6 +2566,162 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &658205854
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 522737159}
+    m_Modifications:
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.34056783
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.94022
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Name
+      value: Blue Team Mid Pylon 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -39.823
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &658205855 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 658205854}
+--- !u!1 &658205856 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 658205854}
+--- !u!114 &658205857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 658205856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
+--- !u!1001 &660266262
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 522737159}
+    m_Modifications:
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.34056783
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.94022
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Name
+      value: Blue Team Mid Pylon 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -39.823
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &660266263 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 660266262}
+--- !u!1 &660266264 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 660266262}
+--- !u!114 &660266265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660266264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1 &666722630 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1034120920056492, guid: 4d323756a10bf9b46a555e280f2a90bc,
@@ -2401,11 +3209,11 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 404067782}
+    m_TransformParent: {fileID: 522737159}
     m_Modifications:
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 78
+      value: -65
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2413,7 +3221,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 72
+      value: 103.6
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2433,7 +3241,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_Name
@@ -2586,6 +3394,30 @@ Transform:
   m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
     type: 2}
   m_PrefabInternal: {fileID: 876932947}
+--- !u!1 &883832337 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 418382063}
+--- !u!4 &883832338 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 418382063}
+--- !u!114 &883832339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883832337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1 &887003626 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
@@ -2605,6 +3437,60 @@ MonoBehaviour:
   maxHealth: 500
   currHealth: 500
   healthAsDecimal: 1
+--- !u!1001 &895318969
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2122355592}
+    m_Modifications:
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.35710385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.93406475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Name
+      value: Red Team Mid Pylon 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -41.845
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &902797053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,6 +3665,60 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+--- !u!1001 &923892442
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2122355592}
+    m_Modifications:
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Name
+      value: Blue Team Mid Pylon 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &925442608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,6 +3745,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 404067782}
+  - {fileID: 522737159}
+  - {fileID: 2122355592}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3180,6 +4122,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22cd3abb35e2f1e4eb6ee10dec07ad56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1004221523 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 895318969}
+--- !u!4 &1004221524 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 895318969}
+--- !u!114 &1004221525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1004221523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1 &1011489927
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,6 +6097,60 @@ GameObject:
   m_PrefabParentObject: {fileID: 1386799663527000, guid: 4d323756a10bf9b46a555e280f2a90bc,
     type: 2}
   m_PrefabInternal: {fileID: 617396716}
+--- !u!1001 &1329274242
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2122355592}
+    m_Modifications:
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Name
+      value: Blue Team Mid Pylon 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1351833153
 GameObject:
   m_ObjectHideFlags: 0
@@ -6113,11 +7133,11 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 404067782}
+    m_TransformParent: {fileID: 522737159}
     m_Modifications:
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 63
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6125,7 +7145,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 57
+      value: 103.6
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6145,7 +7165,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_Name
@@ -6168,11 +7188,11 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 404067782}
+    m_TransformParent: {fileID: 522737159}
     m_Modifications:
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 23
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6180,7 +7200,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 17
+      value: 103.6
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6200,7 +7220,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
       propertyPath: m_Name
@@ -6636,6 +7656,30 @@ Transform:
   m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
     type: 2}
   m_PrefabInternal: {fileID: 1726689471}
+--- !u!1 &1753992953 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1329274242}
+--- !u!4 &1753992954 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1329274242}
+--- !u!114 &1753992955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1753992953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1 &1757623283
 GameObject:
   m_ObjectHideFlags: 0
@@ -8268,6 +9312,80 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+--- !u!1001 &1980899549
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 404067782}
+    m_Modifications:
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Name
+      value: Red Team Mid Pylon 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1980899550 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 1980899549}
+--- !u!1 &1980899551 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 1980899549}
+--- !u!114 &1980899552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1980899551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1 &1990832585
 GameObject:
   m_ObjectHideFlags: 0
@@ -8586,6 +9704,84 @@ MonoBehaviour:
   maxHealth: 500
   currHealth: 500
   healthAsDecimal: 1
+--- !u!1001 &2071077680
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 522737159}
+    m_Modifications:
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.34056783
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.94022
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Name
+      value: Blue Team Mid Pylon 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -39.823
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1c27a483c90554342a9f96c3f108f67b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2071077681 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2071077680}
+--- !u!1 &2071077682 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1865362076814018, guid: 1c27a483c90554342a9f96c3f108f67b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2071077680}
+--- !u!114 &2071077683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2071077682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
 --- !u!1 &2087244682
 GameObject:
   m_ObjectHideFlags: 0
@@ -8700,6 +9896,116 @@ GameObject:
   m_PrefabParentObject: {fileID: 1245391001537414, guid: 4d323756a10bf9b46a555e280f2a90bc,
     type: 2}
   m_PrefabInternal: {fileID: 617396716}
+--- !u!1001 &2106238870
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 404067782}
+    m_Modifications:
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Name
+      value: Red Team Mid Pylon 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0403de2c1b544a440b57c82ddb3b2414, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2106238871 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4913523243356242, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 2106238870}
+--- !u!1 &2106238872 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
+    type: 2}
+  m_PrefabInternal: {fileID: 2106238870}
+--- !u!114 &2106238873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106238872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77c76056c9270b4093bb690feed22e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currHealth: 500
+  healthAsDecimal: 1
+--- !u!1 &2122355591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2122355592}
+  m_Layer: 0
+  m_Name: Bot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2122355592
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122355591}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1004221524}
+  - {fileID: 219270927}
+  - {fileID: 527593804}
+  - {fileID: 883832338}
+  - {fileID: 1753992954}
+  - {fileID: 97711208}
+  - {fileID: 134512250}
+  - {fileID: 224011382}
+  m_Father: {fileID: 925442609}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138616223
 GameObject:
   m_ObjectHideFlags: 0
