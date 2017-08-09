@@ -240,6 +240,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &21931876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,6 +507,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &28034297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +593,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 3
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &30462351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,6 +844,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &48229402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1676,6 +1684,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &151951020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,6 +2026,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &196660610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,6 +2080,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &196660613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,6 +2395,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &223965109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2586,6 +2602,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &240573374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,6 +3134,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 3
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &323006582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3642,6 +3662,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &364641569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3896,6 +3918,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &377416507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4353,6 +4377,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &391126195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4986,6 +5012,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &515990814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5160,6 +5188,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 3
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &522508897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5371,6 +5401,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &523613352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5651,6 +5683,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 3
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &555380250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6044,6 +6078,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &577497669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6218,6 +6254,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &583250800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6393,6 +6431,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &591972219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6568,6 +6608,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &594291724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6881,6 +6923,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &620263570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7252,6 +7296,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &637285101
 GameObject:
   m_ObjectHideFlags: 0
@@ -7532,6 +7578,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &663920542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8043,6 +8091,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &759632932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8218,6 +8268,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &760343422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8627,6 +8679,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &800497004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9004,6 +9058,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1001 &848489920
 Prefab:
   m_ObjectHideFlags: 0
@@ -9672,6 +9728,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &899816212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9968,6 +10026,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &911888620
 GameObject:
   m_ObjectHideFlags: 0
@@ -10339,6 +10399,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &931097818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10737,6 +10799,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &986321786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11113,6 +11177,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1018628576
 GameObject:
   m_ObjectHideFlags: 0
@@ -11290,6 +11356,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1025513185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12080,6 +12148,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1127074767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12513,6 +12583,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1158343084
 GameObject:
   m_ObjectHideFlags: 0
@@ -12565,6 +12637,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1158343087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12972,6 +13046,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1170642943
 GameObject:
   m_ObjectHideFlags: 0
@@ -13104,6 +13180,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1188679305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13665,6 +13743,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1235342628
 GameObject:
   m_ObjectHideFlags: 0
@@ -14046,6 +14126,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1001 &1291062949
 Prefab:
   m_ObjectHideFlags: 0
@@ -14395,6 +14477,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1333959004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14692,6 +14776,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1358117414 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1518403233121264, guid: 0403de2c1b544a440b57c82ddb3b2414,
@@ -14981,6 +15067,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1410307290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15156,6 +15244,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1428059703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16132,6 +16222,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1577487643 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1110864554655960, guid: 4d323756a10bf9b46a555e280f2a90bc,
@@ -16357,6 +16449,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1596722713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16548,6 +16642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lane: 1
+  gateIsResearching: 0
 --- !u!1 &1607670084
 GameObject:
   m_ObjectHideFlags: 0
@@ -16628,6 +16723,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1616042883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16901,6 +16998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lane: 2
+  gateIsResearching: 0
 --- !u!1 &1651608971
 GameObject:
   m_ObjectHideFlags: 0
@@ -16953,6 +17051,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1651608974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17460,6 +17560,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 3
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1695252634
 GameObject:
   m_ObjectHideFlags: 0
@@ -17635,6 +17737,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 3
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1699815861
 GameObject:
   m_ObjectHideFlags: 0
@@ -17687,6 +17791,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1699815864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18607,6 +18713,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1819231849
 GameObject:
   m_ObjectHideFlags: 0
@@ -18675,6 +18783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lane: 0
+  gateIsResearching: 0
 --- !u!4 &1825563912 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
@@ -19046,6 +19155,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1879999840 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1484821077770048, guid: 4d323756a10bf9b46a555e280f2a90bc,
@@ -19349,6 +19460,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1906778122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19709,6 +19822,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &1945021540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20090,6 +20205,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1970996395
 GameObject:
   m_ObjectHideFlags: 0
@@ -20264,6 +20381,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 3
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1 &1972561210
 GameObject:
   m_ObjectHideFlags: 0
@@ -20439,6 +20558,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 1
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!1001 &1980899549
 Prefab:
   m_ObjectHideFlags: 0
@@ -20688,6 +20809,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 3
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &2005145041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20862,6 +20985,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 3
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &2018047754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21116,6 +21241,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &2031692071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21637,6 +21764,8 @@ MonoBehaviour:
   cost: 1000
   maxRank: 5
   currentRank: 0
+  researchTime: 0
+  activeRank: {fileID: 0}
 --- !u!114 &2087953315
 MonoBehaviour:
   m_ObjectHideFlags: 0

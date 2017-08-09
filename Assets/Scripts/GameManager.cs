@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+    public float time;
+
     public float[] team1Damage;
     public float[] team2Damage;
 
@@ -33,7 +35,7 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		
+        time = Time.timeSinceLevelLoad;
 	}
 
     private void InitialiseUnitDamageArray()
