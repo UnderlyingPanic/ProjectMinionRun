@@ -1108,6 +1108,7 @@ MonoBehaviour:
   maxHealth: 1
   currHealth: 1
   healthAsDecimal: 1
+  goldAward: 100
 --- !u!114 &114100894128393400
 MonoBehaviour:
   m_ObjectHideFlags: 1

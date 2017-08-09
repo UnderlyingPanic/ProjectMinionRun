@@ -103,8 +103,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1820870175063072}
-  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: -15.68, y: -2.4607391, z: -15.18}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -11.15609, y: -2.4607391, z: -19.468742}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4934167148179092}
@@ -113,7 +113,7 @@ Transform:
   - {fileID: 4982257984401696}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4637914732459432
 Transform:
   m_ObjectHideFlags: 1
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f29e2b0dead314d95b2bc5afd1e6e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 1
+  lane: 2
   team: 0
   swordsman: {fileID: 1458715896894060, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
   mage: {fileID: 1619184541004558, guid: 0d895a043dccc014e938c22a9a252e1f, type: 2}
@@ -352,5 +352,6 @@ MonoBehaviour:
   mountedSwordsman: {fileID: 1870875750811400, guid: ce89d3eb5d5af5f42b9289bec70a1fed,
     type: 2}
   spawnPoint: {fileID: 1644474695148868}
+  parent: {fileID: 0}
   spawnGap: 1
-  waveGap: 10
+  waveGap: 20

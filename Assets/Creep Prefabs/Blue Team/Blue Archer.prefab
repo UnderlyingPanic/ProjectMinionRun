@@ -1142,6 +1142,7 @@ MonoBehaviour:
   maxHealth: 50
   currHealth: 50
   healthAsDecimal: 1
+  goldAward: 100
 --- !u!136 &136329456401546052
 CapsuleCollider:
   m_ObjectHideFlags: 1

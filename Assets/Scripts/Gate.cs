@@ -76,4 +76,9 @@ public class Gate : MonoBehaviour {
         creep.AssignLane(lane);
         creep.transform.parent = parent;
     }
+
+    private void OnMouseDown()
+    {
+        FindObjectOfType<UIManager>().OpenUI(lane);
+    }
 }

@@ -1574,7 +1574,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1127010634747770}
-  m_LocalRotation: {x: 0.6176757, y: 0.71389, z: -0.06070478, w: 0.3242728}
+  m_LocalRotation: {x: 0.61767566, y: 0.71388996, z: -0.06070477, w: 0.32427278}
   m_LocalPosition: {x: -0.10147072, y: -0.00000009689331, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2049,10 +2049,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   attackRange: 0
+  type: 0
   team: 0
   lane: 0
   attackSpeedMod: 1
   damage: 0
+  enemiesInSights: []
   currentTarget: {fileID: 0}
 --- !u!114 &114484113235283524
 MonoBehaviour:
@@ -2068,6 +2070,7 @@ MonoBehaviour:
   maxHealth: 100
   currHealth: 100
   healthAsDecimal: 100
+  goldAward: 100
 --- !u!136 &136930387527916968
 CapsuleCollider:
   m_ObjectHideFlags: 1

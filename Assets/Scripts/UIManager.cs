@@ -35,6 +35,12 @@ public class UIManager : MonoBehaviour {
     
     public void CloseUI()
     {
+        foreach (ResearchTree tree in treeArray)
+        {
+
+            tree.gameObject.SetActive(true);
+
+        }
         canvasObject.SetActive(false);
     }
 }
