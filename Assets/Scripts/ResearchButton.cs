@@ -10,11 +10,12 @@ public class ResearchButton : MonoBehaviour {
     public int currentRank;
     public int researchTime;
     public GameObject activeRank;
+
+    private Lane lane;
     private Text rankText;
     private bool gateIsResearching;
-    private ResearchTree researchTree;
     private bool imActive;
-
+    private GateManager gateManager;
    
     private float finishTime;
 
@@ -25,13 +26,22 @@ public class ResearchButton : MonoBehaviour {
 
         rankText.text = "0/5";
 
-        researchTree = GetComponentInParent<ResearchTree>();
-        gateIsResearching = researchTree.gateIsResearching;
+        lane = GetComponentInParent<ResearchTree>().lane;
+
+        foreach (GateManager gm in GameObject.FindObjectsOfType<GateManager>())
+        {
+            if (gm.lane == this.lane)
+            {
+                gateManager = gm;
+            }
+        }
+        
+        gateIsResearching = gateManager.gateIsResearching;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        gateIsResearching = researchTree.gateIsResearching;
+        gateIsResearching = gateManager.gateIsResearching;
 
         rankText.text = currentRank + "/" + maxRank;
         if (currentRank > 0 && currentRank < maxRank)
@@ -48,7 +58,7 @@ public class ResearchButton : MonoBehaviour {
             if (FindObjectOfType<GameManager>().time >= finishTime)
             {
                 CompleteRankUp();
-                researchTree.gateIsResearching = false;
+                gateManager.gateIsResearching = false;
 
             }
         }
@@ -60,8 +70,9 @@ public class ResearchButton : MonoBehaviour {
         {
             PlayerManager.essence -= cost;
             finishTime = FindObjectOfType<GameManager>().time + PlayerManager.researchTime;
-            imActive =true;
-            researchTree.gateIsResearching = true;
+            gateManager.researchFinishTime = finishTime;
+            imActive = true;
+            gateManager.gateIsResearching = true;
         }
     }
 

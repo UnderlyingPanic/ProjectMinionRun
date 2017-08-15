@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 4178676167102132}
   - component: {fileID: 65721386838149790}
   - component: {fileID: 114783986522617674}
+  - component: {fileID: 114470858701263838}
   m_Layer: 0
   m_Name: Blue Gate
   m_TagString: Untagged
@@ -317,8 +318,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.9994564, y: 4.4321136, z: 2.5275867}
+  m_Center: {x: 0.38717175, y: 1.7160568, z: -0.022598505}
 --- !u!65 &65837793725895504
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -331,6 +332,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114470858701263838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820870175063072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05df223f10b4ff4ab0824be378e1c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114783986522617674
 MonoBehaviour:
   m_ObjectHideFlags: 1

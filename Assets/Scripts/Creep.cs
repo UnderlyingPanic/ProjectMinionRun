@@ -245,6 +245,11 @@ public class Creep : MonoBehaviour {
 
     public void DealDamage()
     {
+        if (currentTarget == null) //IF ANYTHING BREAKS REMOVE THIS FIRST
+        {
+            return;
+        }
+
         Health enemyHealth;
 
         if (!currentTarget.GetComponent<Health>())

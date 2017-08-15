@@ -5,13 +5,13 @@ using UnityEngine;
 public class ResearchTree : MonoBehaviour {
 
     public Lane lane;
-    public bool gateIsResearching;
 
-	// Use this for initialization
-	void Start () {
 
-        gateIsResearching = false;
-}
+    // Use this for initialization
+    void Start()
+    {
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

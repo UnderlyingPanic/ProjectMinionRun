@@ -1506,6 +1506,11 @@ Prefab:
       propertyPath: lane
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114470858701263838, guid: a64be522feb4cdc499c7bea6e12cbf75,
+        type: 2}
+      propertyPath: lane
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
   m_IsPrefabParent: 0
@@ -10682,35 +10687,10 @@ Prefab:
       propertyPath: m_Name
       value: Bot
       objectReference: {fileID: 0}
-    - target: {fileID: 65721386838149790, guid: a64be522feb4cdc499c7bea6e12cbf75,
+    - target: {fileID: 114470858701263838, guid: a64be522feb4cdc499c7bea6e12cbf75,
         type: 2}
-      propertyPath: m_Size.z
-      value: 2.5275867
-      objectReference: {fileID: 0}
-    - target: {fileID: 65721386838149790, guid: a64be522feb4cdc499c7bea6e12cbf75,
-        type: 2}
-      propertyPath: m_Center.x
-      value: 0.38717175
-      objectReference: {fileID: 0}
-    - target: {fileID: 65721386838149790, guid: a64be522feb4cdc499c7bea6e12cbf75,
-        type: 2}
-      propertyPath: m_Center.z
-      value: -0.022598505
-      objectReference: {fileID: 0}
-    - target: {fileID: 65721386838149790, guid: a64be522feb4cdc499c7bea6e12cbf75,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 4.9994564
-      objectReference: {fileID: 0}
-    - target: {fileID: 65721386838149790, guid: a64be522feb4cdc499c7bea6e12cbf75,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 4.4321136
-      objectReference: {fileID: 0}
-    - target: {fileID: 65721386838149790, guid: a64be522feb4cdc499c7bea6e12cbf75,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 1.7160568
+      propertyPath: lane
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
@@ -16642,7 +16622,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lane: 1
-  gateIsResearching: 0
 --- !u!1 &1607670084
 GameObject:
   m_ObjectHideFlags: 0
@@ -16998,7 +16977,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lane: 2
-  gateIsResearching: 0
 --- !u!1 &1651608971
 GameObject:
   m_ObjectHideFlags: 0
@@ -18783,7 +18761,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lane: 0
-  gateIsResearching: 0
 --- !u!4 &1825563912 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
