@@ -79,6 +79,7 @@ public class Gate : MonoBehaviour {
 
     private void OnMouseDown()
     {
+        FindObjectOfType<UIManager>().CloseUI();
         FindObjectOfType<UIManager>().OpenUI(lane);
     }
 }

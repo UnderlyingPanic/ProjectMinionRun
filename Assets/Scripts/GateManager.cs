@@ -9,6 +9,7 @@ public class GateManager : MonoBehaviour {
     public bool gateIsResearching;
     public float researchPercent;
     public float researchFinishTime;
+    
 
 	// Use this for initialization
 	void Start () {
