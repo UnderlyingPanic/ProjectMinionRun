@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 222057352082837470}
   - component: {fileID: 114038718397725354}
   m_Layer: 5
-  m_Name: Gate Text
+  m_Name: Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,6 +591,7 @@ GameObject:
   - component: {fileID: 222829061934352976}
   - component: {fileID: 114304542458047928}
   - component: {fileID: 114236235070105212}
+  - component: {fileID: 114068706665751170}
   - component: {fileID: 114522074325727282}
   m_Layer: 5
   m_Name: Talent (1)
@@ -769,6 +770,7 @@ GameObject:
   - component: {fileID: 114106954397795160}
   - component: {fileID: 114864289584691836}
   - component: {fileID: 114299356340575438}
+  - component: {fileID: 114188901056281028}
   m_Layer: 5
   m_Name: Talent (2)
   m_TagString: Untagged
@@ -1155,9 +1157,20 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 3
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
+--- !u!114 &114068706665751170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691568955000990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9add902475076245a1695d8f0750087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114069551673598940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1265,9 +1278,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 4
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114080753423668752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1400,9 +1413,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 5
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114106954397795160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1499,7 +1512,7 @@ MonoBehaviour:
   activeRank: {fileID: 0}
   teir: 0
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 15
 --- !u!114 &114124192378067426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1516,9 +1529,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 4
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114139326956967994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1587,9 +1600,20 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 3
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
+--- !u!114 &114188901056281028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1935828906168766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a210eff93cdbc0419ba3ea51ecd3b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114190084634630138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1732,9 +1756,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 5
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114203434400824522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1751,9 +1775,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 3
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114221413599484256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1770,9 +1794,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 4
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114230754492615782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1824,7 +1848,7 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 1
   requiredTalents: []
   numberRequiredFromPreviousTeir: 0
 --- !u!114 &114238390265178972
@@ -2030,9 +2054,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 2
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 5
 --- !u!114 &114304542458047928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2075,9 +2099,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 2
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 5
 --- !u!114 &114326030293724190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2129,7 +2153,7 @@ MonoBehaviour:
   activeRank: {fileID: 0}
   teir: 0
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 15
 --- !u!114 &114338867976147720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2148,7 +2172,7 @@ MonoBehaviour:
   activeRank: {fileID: 0}
   teir: 0
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 15
 --- !u!114 &114339455789311050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2559,9 +2583,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 4
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114418219145312900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2898,9 +2922,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 5
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114466963777363990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3411,9 +3435,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 2
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 5
 --- !u!114 &114575491474646912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3430,9 +3454,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 2
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 5
 --- !u!114 &114591059175996068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3904,9 +3928,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 3
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114774189435645474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4485,9 +4509,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 5
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114918937933456972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4574,9 +4598,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 5
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 0
+  numberRequiredFromPreviousTeir: 10
 --- !u!114 &114969281216443008
 MonoBehaviour:
   m_ObjectHideFlags: 1

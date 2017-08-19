@@ -7,6 +7,8 @@ public class Health : MonoBehaviour {
     public float maxHealth;
     public float currHealth;
     public float healthAsDecimal;
+    public float armour;
+    public float shield;
 
     public int goldAward;
 
@@ -19,10 +21,14 @@ public class Health : MonoBehaviour {
 
         if (GetComponent<Pylon>()) {
             team = GetComponent<Pylon>().team;
+            armour = 0;
+            shield = 0;
         }
         if (GetComponent<Creep>())
         {
             team = GetComponent<Creep>().team;
+            armour = GetComponent<Creep>().armour;
+            shield = GetComponent<Creep>().shield;
         }
     }
 	

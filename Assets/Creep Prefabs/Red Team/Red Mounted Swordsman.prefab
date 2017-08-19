@@ -1705,7 +1705,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1275551207558542}
-  m_LocalRotation: {x: 0.61767566, y: 0.71388996, z: -0.060704775, w: 0.32427278}
+  m_LocalRotation: {x: 0.6176757, y: 0.71389, z: -0.06070478, w: 0.3242728}
   m_LocalPosition: {x: -0.10147072, y: -0.00000009689331, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2057,6 +2057,8 @@ MonoBehaviour:
   maxHealth: 100
   currHealth: 100
   healthAsDecimal: 100
+  armour: 1
+  shield: 2
   goldAward: 100
 --- !u!136 &136051780564530166
 CapsuleCollider:

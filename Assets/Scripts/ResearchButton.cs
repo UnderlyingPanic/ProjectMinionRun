@@ -89,6 +89,7 @@ public class ResearchButton : MonoBehaviour {
         currentRank++;
         imActive = false;
         GetComponent<RawImage>().color = Color.white;
+        SendMessage("OnRankUp");
     }
 
     public bool CheckPrerequisites()

@@ -12,6 +12,9 @@ public class Creep : MonoBehaviour {
     public Lane lane;
     public float attackSpeedMod = 1f;
     public float damage;
+    public float armour;
+    public float shield;
+    public float lifeSteal;
 
     private bool attacking;
 
@@ -272,5 +275,7 @@ public class Creep : MonoBehaviour {
         GetComponent<Health>().currHealth = gameManager.PassOutHealth(type, lane, team);
         moveSpeed = gameManager.PassOutMoveSpeed(type, lane, team);
         attackSpeedMod = gameManager.PassOutAtkSpd(type, lane, team);
+        shield = gameManager.PassOutShields(type,lane,team);
+        armour = gameManager.PassOutArmour(type, lane, team);
     }
 }

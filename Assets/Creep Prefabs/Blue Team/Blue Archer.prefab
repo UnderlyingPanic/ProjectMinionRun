@@ -1112,6 +1112,8 @@ MonoBehaviour:
   lane: 0
   attackSpeedMod: 1
   damage: 10
+  armour: 1
+  shield: 2
   enemiesInSights: []
   currentTarget: {fileID: 0}
 --- !u!114 &114603322134697146
@@ -1142,6 +1144,8 @@ MonoBehaviour:
   maxHealth: 50
   currHealth: 50
   healthAsDecimal: 1
+  armour: 3
+  shield: 4
   goldAward: 100
 --- !u!136 &136329456401546052
 CapsuleCollider:

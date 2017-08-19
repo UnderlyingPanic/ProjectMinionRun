@@ -1132,6 +1132,8 @@ MonoBehaviour:
   maxHealth: 1
   currHealth: 1
   healthAsDecimal: 1
+  armour: 1
+  shield: 2
   goldAward: 100
 --- !u!114 &114728839244152264
 MonoBehaviour:

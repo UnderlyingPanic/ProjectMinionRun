@@ -1118,6 +1118,8 @@ MonoBehaviour:
   maxHealth: 75
   currHealth: 75
   healthAsDecimal: 1
+  armour: 3
+  shield: 4
   goldAward: 100
 --- !u!114 &114829688827485910
 MonoBehaviour:
@@ -1137,6 +1139,8 @@ MonoBehaviour:
   lane: 0
   attackSpeedMod: 1
   damage: 7.5
+  armour: 1
+  shield: 2
   enemiesInSights: []
   currentTarget: {fileID: 0}
 --- !u!114 &114895218724522920

@@ -18,6 +18,12 @@ public class GameManager : MonoBehaviour {
     public float[] team1MoveSpeed;
     public float[] team2MoveSpeed;
 
+    public float[] team1Armour;
+    public float[] team2Armour;
+
+    public float[] team1Shield;
+    public float[] team2Shield;
+
     //Top Melee, Top Mage, Top Archer, Mid Melee, Mid Mage, Mid Archer, Bot Melee, Bot Mage, Bot Archer
     public int[] unitIndex;
 
@@ -30,6 +36,8 @@ public class GameManager : MonoBehaviour {
         InitialiseUnitHPArray();
         InitialiseAttackSpeedArray();
         InitialiseMoveSpeedArray();
+        InitialiseShieldArray();
+        InitialiseArmourArray();
     }
 	
 	// Update is called once per frame
@@ -144,6 +152,60 @@ public class GameManager : MonoBehaviour {
         foreach (float x in team1MoveSpeed)
         {
             team2MoveSpeed[z] = x;
+            z++;
+        }
+    }
+
+    private void InitialiseArmourArray()
+    {
+        int i = 0;
+
+        foreach (GameObject unit in units)
+        {
+            Creep creep = unit.GetComponent<Creep>();
+            team1Armour[i] = creep.armour;
+            i++;
+        }
+
+        team1Armour[3] = team1Armour[0];
+        team1Armour[4] = team1Armour[1];
+        team1Armour[5] = team1Armour[2];
+        team1Armour[6] = team1Armour[0];
+        team1Armour[7] = team1Armour[1];
+        team1Armour[8] = team1Armour[2];
+
+        int z = 0;
+
+        foreach (float x in team1Armour)
+        {
+            team2Armour[z] = x;
+            z++;
+        }
+    }
+
+    private void InitialiseShieldArray()
+    {
+        int i = 0;
+
+        foreach (GameObject unit in units)
+        {
+            Creep creep = unit.GetComponent<Creep>();
+            team1Shield[i] = creep.shield;
+            i++;
+        }
+
+        team1Shield[3] = team1Shield[0];
+        team1Shield[4] = team1Shield[1];
+        team1Shield[5] = team1Shield[2];
+        team1Shield[6] = team1Shield[0];
+        team1Shield[7] = team1Shield[1];
+        team1Shield[8] = team1Shield[2];
+
+        int z = 0;
+
+        foreach (float x in team1Shield)
+        {
+            team2Shield[z] = x;
             z++;
         }
     }
@@ -286,5 +348,75 @@ public class GameManager : MonoBehaviour {
         }
 
         throw new UnityException("Game Manager tried to pass out Damage and failed miserably.");
+    }
+
+    public float PassOutShields(Unit unitType, Lane lane, Team team)
+    {
+        int i = 1;
+
+        if (unitType == Unit.mage)
+        {
+            i = 2;
+        }
+        if (unitType == Unit.archer)
+        {
+            i = 3;
+        }
+
+        if (lane == Lane.mid)
+        {
+            i += 3;
+        }
+        if (lane == Lane.bottom)
+        {
+            i += 6;
+        }
+
+
+        if (team == Team.Team1)
+        {
+            return team1Shield[i - 1];
+        }
+        if (team == Team.Team2)
+        {
+            return team2Shield[i - 1];
+        }
+
+        throw new UnityException("Game Manager tried to pass out Shields and failed miserably.");
+    }
+
+    public float PassOutArmour(Unit unitType, Lane lane, Team team)
+    {
+        int i = 1;
+
+        if (unitType == Unit.mage)
+        {
+            i = 2;
+        }
+        if (unitType == Unit.archer)
+        {
+            i = 3;
+        }
+
+        if (lane == Lane.mid)
+        {
+            i += 3;
+        }
+        if (lane == Lane.bottom)
+        {
+            i += 6;
+        }
+
+
+        if (team == Team.Team1)
+        {
+            return team1Armour[i - 1];
+        }
+        if (team == Team.Team2)
+        {
+            return team2Armour[i - 1];
+        }
+
+        throw new UnityException("Game Manager tried to pass out Shields and failed miserably.");
     }
 }
