@@ -15,13 +15,13 @@ public class Creep : MonoBehaviour {
     public float armour;
     public float shield;
     public float lifeSteal;
-
-    private bool attacking;
-
-    private int arrayI;
-    private float sightRange;
     public List<GameObject> enemiesInSights = new List<GameObject>();
     public GameObject currentTarget;
+    public GameObject tooltip;
+
+    private bool attacking;
+    private int arrayI;
+    private float sightRange;
     private Animator animator;
     private GameObject currentWaypoint;
     private WaypointManager waypointManager;
@@ -277,5 +277,18 @@ public class Creep : MonoBehaviour {
         attackSpeedMod = gameManager.PassOutAtkSpd(type, lane, team);
         shield = gameManager.PassOutShields(type,lane,team);
         armour = gameManager.PassOutArmour(type, lane, team);
+    }
+
+    public void SetTooltipTarget()
+    {
+        if (!FindObjectOfType<UnitTooltip>())
+        {
+            GameObject newToolTip = Instantiate(tooltip, GameObject.Find("General UI").transform);
+            newToolTip.GetComponent<UnitTooltip>().selectedObject = this.gameObject;
+        }
+        else
+        {
+            FindObjectOfType<UnitTooltip>().selectedObject = this.gameObject;
+        }
     }
 }

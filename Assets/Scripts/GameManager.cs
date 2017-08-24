@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject[] units;
 
+    public GameObject selectedObject;
+
     // Use this for initialization
     void Start ()
     {
@@ -418,5 +420,10 @@ public class GameManager : MonoBehaviour {
         }
 
         throw new UnityException("Game Manager tried to pass out Shields and failed miserably.");
+    }
+
+    public void SetSelectedObject (GameObject obj)
+    {
+        selectedObject = obj;
     }
 }

@@ -460,6 +460,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6eb4a55083b8784ab8285f6f30d5df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}
+  unitNameText: {fileID: 114637113083511690}
+  damageText: {fileID: 114374458363368566}
+  attackSpeedText: {fileID: 114786178312841330}
+  lifeStealText: {fileID: 114417601769125140}
+  hpText: {fileID: 114097469942800514}
+  armourText: {fileID: 114849972164109422}
+  shieldText: {fileID: 114084233054772570}
 --- !u!114 &114542130025736390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -618,9 +626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Swordsman
-
-'
+  m_Text: Bitch Nigga
 --- !u!114 &114648682516948404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -878,7 +884,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1456580853033558}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -896,7 +902,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -213.59998, y: 72.39996}
+  m_AnchoredPosition: {x: -216, y: 72.4}
   m_SizeDelta: {x: 409.5, y: 128.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224191221000837104

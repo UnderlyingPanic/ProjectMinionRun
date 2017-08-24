@@ -7,6 +7,7 @@ public class UnitTooltip : MonoBehaviour {
 
     public GameObject selectedObject;
 
+    public Text unitNameText;
     public Text damageText;
     public Text attackSpeedText;
     public Text lifeStealText;
@@ -14,10 +15,14 @@ public class UnitTooltip : MonoBehaviour {
     public Text armourText;
     public Text shieldText;
 
+    private Transform generalUI;
+    private GameManager gameManager;
 
-	// Use this for initialization
-	void Start () {
-		
+
+    // Use this for initialization
+    void Start () {
+        generalUI = GameObject.Find("General UI").transform;
+        gameManager = FindObjectOfType<GameManager>();
 	}
 	
 	// Update is called once per frame
@@ -32,6 +37,7 @@ public class UnitTooltip : MonoBehaviour {
             lifeStealText.text = creep.lifeSteal.ToString();
             armourText.text = creep.armour.ToString();
             shieldText.text = creep.shield.ToString();
+            unitNameText.text = creep.type.ToString();
 
             string currHp = selectedObject.GetComponent<Health>().currHealth.ToString();
             string maxHP = selectedObject.GetComponent<Health>().maxHealth.ToString();
@@ -40,10 +46,5 @@ public class UnitTooltip : MonoBehaviour {
         }
             
            
-    }
-
-    public void SetText ()
-    {
-       
     }
 }
