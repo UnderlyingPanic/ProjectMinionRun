@@ -23,8 +23,7 @@ public class Cursor : MonoBehaviour {
 
             if (Physics.Raycast(ray, out rayHit, Mathf.Infinity))
             {
-                Debug.Log("Clicked something");
-                 if (rayHit.collider.GetComponentInParent<Creep>())
+                if (rayHit.collider.GetComponentInParent<Creep>())
                 {
                     rayHit.collider.GetComponentInParent<Creep>().SetTooltipTarget();
                 }

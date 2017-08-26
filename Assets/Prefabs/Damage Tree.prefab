@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 114238390265178972}
   - component: {fileID: 114914758491544344}
   m_Layer: 5
-  m_Name: Talent (15)
+  m_Name: Second Wind (T5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,8 +127,9 @@ GameObject:
   - component: {fileID: 114969281216443008}
   - component: {fileID: 114085376187495166}
   - component: {fileID: 114575491474646912}
+  - component: {fileID: 114326773682661240}
   m_Layer: 5
-  m_Name: Talent (3)
+  m_Name: Arcane Attunement (T2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +148,7 @@ GameObject:
   - component: {fileID: 114903291732549432}
   - component: {fileID: 114079395658100272}
   m_Layer: 5
-  m_Name: Talent (10)
+  m_Name: Blood Magic (T4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,8 +183,9 @@ GameObject:
   - component: {fileID: 114110976857394898}
   - component: {fileID: 114036888768112676}
   - component: {fileID: 114124192378067426}
+  - component: {fileID: 114853395929627570}
   m_Layer: 5
-  m_Name: Talent (11)
+  m_Name: Poison Arrows (T4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,7 +204,7 @@ GameObject:
   - component: {fileID: 114514124459287700}
   - component: {fileID: 114417841168937600}
   m_Layer: 5
-  m_Name: Talent (12)
+  m_Name: Giant Slayer (T4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -336,8 +338,9 @@ GameObject:
   - component: {fileID: 114111123281284414}
   - component: {fileID: 114491428628673386}
   - component: {fileID: 114327568889686832}
+  - component: {fileID: 114153669744564104}
   m_Layer: 5
-  m_Name: Endgame Talent (1)
+  m_Name: Beserk (End Teir)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -373,7 +376,7 @@ GameObject:
   - component: {fileID: 114413815882079492}
   - component: {fileID: 114773496460324886}
   m_Layer: 5
-  m_Name: Talent (9)
+  m_Name: Vengeance (T3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -408,8 +411,9 @@ GameObject:
   - component: {fileID: 114139326956967994}
   - component: {fileID: 114913545486234732}
   - component: {fileID: 114319458050853954}
+  - component: {fileID: 114853928471545090}
   m_Layer: 5
-  m_Name: Talent (5)
+  m_Name: Time Dilation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,8 +431,9 @@ GameObject:
   - component: {fileID: 114295627895495198}
   - component: {fileID: 114845296824135990}
   - component: {fileID: 114203211365039692}
+  - component: {fileID: 114570421745445538}
   m_Layer: 5
-  m_Name: Talent (18)
+  m_Name: Advanced Time Dilation (T5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -463,8 +468,9 @@ GameObject:
   - component: {fileID: 114143294700163282}
   - component: {fileID: 114480914236045004}
   - component: {fileID: 114091954261281174}
+  - component: {fileID: 114179286634263544}
   m_Layer: 5
-  m_Name: Talent (17)
+  m_Name: Arcune Attunement 2 (T5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,7 +489,7 @@ GameObject:
   - component: {fileID: 114618450386678416}
   - component: {fileID: 114160637367130348}
   m_Layer: 5
-  m_Name: Talent (7)
+  m_Name: Captain (T3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,8 +541,9 @@ GameObject:
   - component: {fileID: 114431942953299226}
   - component: {fileID: 114397577672334408}
   - component: {fileID: 114444770743549790}
+  - component: {fileID: 114441745647029566}
   m_Layer: 5
-  m_Name: Talent (16)
+  m_Name: Swordsman Training 2 (T5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -555,7 +562,7 @@ GameObject:
   - component: {fileID: 114429627134125392}
   - component: {fileID: 114549566270389560}
   m_Layer: 5
-  m_Name: Talent (4)
+  m_Name: Extraction (T2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,7 +581,7 @@ GameObject:
   - component: {fileID: 114069551673598940}
   - component: {fileID: 114115339056665816}
   m_Layer: 5
-  m_Name: Endgame Talent (3)
+  m_Name: Vampirism (End Tier)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,10 +598,10 @@ GameObject:
   - component: {fileID: 222829061934352976}
   - component: {fileID: 114304542458047928}
   - component: {fileID: 114236235070105212}
-  - component: {fileID: 114068706665751170}
   - component: {fileID: 114522074325727282}
+  - component: {fileID: 114697264455803218}
   m_Layer: 5
-  m_Name: Talent (1)
+  m_Name: Weapon Efficiency (T1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -664,8 +671,9 @@ GameObject:
   - component: {fileID: 114414486277263030}
   - component: {fileID: 114598153590783378}
   - component: {fileID: 114221413599484256}
+  - component: {fileID: 114757884654614636}
   m_Layer: 5
-  m_Name: Talent (13)
+  m_Name: Intermediate Time Dilation (T4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -684,7 +692,7 @@ GameObject:
   - component: {fileID: 114195572971444766}
   - component: {fileID: 114203434400824522}
   m_Layer: 5
-  m_Name: Talent (8)
+  m_Name: Advanced Tactics (T3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -771,8 +779,9 @@ GameObject:
   - component: {fileID: 114864289584691836}
   - component: {fileID: 114299356340575438}
   - component: {fileID: 114188901056281028}
+  - component: {fileID: 114887677881791082}
   m_Layer: 5
-  m_Name: Talent (2)
+  m_Name: Swordsman Training (T2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -807,8 +816,9 @@ GameObject:
   - component: {fileID: 114695223402203896}
   - component: {fileID: 114591059175996068}
   - component: {fileID: 114338867976147720}
+  - component: {fileID: 114393760866691626}
   m_Layer: 5
-  m_Name: Endgame Talent (2)
+  m_Name: Time Warp (End Tier)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -827,7 +837,7 @@ GameObject:
   - component: {fileID: 114034461004405046}
   - component: {fileID: 114959962022016168}
   m_Layer: 5
-  m_Name: Talent (14)
+  m_Name: Blood Arrows (T5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -863,7 +873,7 @@ GameObject:
   - component: {fileID: 114418219145312900}
   - component: {fileID: 114043073151414498}
   m_Layer: 5
-  m_Name: Talent (6)
+  m_Name: Life From Blood (T3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1160,17 +1170,6 @@ MonoBehaviour:
   teir: 3
   requiredTalents: []
   numberRequiredFromPreviousTeir: 10
---- !u!114 &114068706665751170
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1691568955000990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9add902475076245a1695d8f0750087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114069551673598940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1279,7 +1278,8 @@ MonoBehaviour:
   researchTime: 0
   activeRank: {fileID: 0}
   teir: 4
-  requiredTalents: []
+  requiredTalents:
+  - {fileID: 114043073151414498}
   numberRequiredFromPreviousTeir: 10
 --- !u!114 &114080753423668752
 MonoBehaviour:
@@ -1510,9 +1510,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 6
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 15
+  numberRequiredFromPreviousTeir: 0
 --- !u!114 &114124192378067426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1584,6 +1584,20 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &114153669744564104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339723135837982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 3
+  stat: 0
+  modifier: 5
 --- !u!114 &114160637367130348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1603,6 +1617,20 @@ MonoBehaviour:
   teir: 3
   requiredTalents: []
   numberRequiredFromPreviousTeir: 10
+--- !u!114 &114179286634263544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1574606294547552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 1
+  stat: 0
+  modifier: 1.5
 --- !u!114 &114188901056281028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2135,6 +2163,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 9999999
+--- !u!114 &114326773682661240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1113955980933814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 1
+  stat: 0
+  modifier: 1.25
 --- !u!114 &114327568889686832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2151,9 +2193,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 6
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 15
+  numberRequiredFromPreviousTeir: 0
 --- !u!114 &114338867976147720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2170,9 +2212,9 @@ MonoBehaviour:
   currentRank: 0
   researchTime: 0
   activeRank: {fileID: 0}
-  teir: 0
+  teir: 6
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 15
+  numberRequiredFromPreviousTeir: 0
 --- !u!114 &114339455789311050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2290,6 +2332,17 @@ MonoBehaviour:
   m_Text: '0/5
 
 '
+--- !u!114 &114393760866691626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956120310509300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 983679cd9b69c7542b086818ec25c108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114397577672334408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2906,6 +2959,20 @@ MonoBehaviour:
   m_Text: '0/5
 
 '
+--- !u!114 &114441745647029566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1655427733500016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 0
+  stat: 0
+  modifier: 1.5
 --- !u!114 &114444770743549790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3438,6 +3505,20 @@ MonoBehaviour:
   teir: 2
   requiredTalents: []
   numberRequiredFromPreviousTeir: 5
+--- !u!114 &114570421745445538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1492512005639270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 3
+  stat: 2
+  modifier: 1.05
 --- !u!114 &114575491474646912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3886,6 +3967,34 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &114697264455803218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691568955000990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 3
+  stat: 0
+  modifier: 1.1
+--- !u!114 &114757884654614636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783558402078326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 3
+  stat: 2
+  modifier: 1.05
 --- !u!114 &114759282686278112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4129,6 +4238,34 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114853395929627570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1170163293677108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 2
+  stat: 0
+  modifier: 1.5
+--- !u!114 &114853928471545090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1432564067901662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 3
+  stat: 2
+  modifier: 1.01
 --- !u!114 &114859939328525758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4252,6 +4389,20 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114887677881791082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1935828906168766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27686c505787ea84bab734053420878a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitToModify: 0
+  stat: 0
+  modifier: 1.25
 --- !u!114 &114898512797685568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4599,7 +4750,8 @@ MonoBehaviour:
   researchTime: 0
   activeRank: {fileID: 0}
   teir: 5
-  requiredTalents: []
+  requiredTalents:
+  - {fileID: 114079395658100272}
   numberRequiredFromPreviousTeir: 10
 --- !u!114 &114969281216443008
 MonoBehaviour:

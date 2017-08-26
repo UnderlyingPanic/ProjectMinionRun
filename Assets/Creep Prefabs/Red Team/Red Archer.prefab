@@ -1128,7 +1128,7 @@ MonoBehaviour:
   team: 1
   lane: 0
   attackSpeedMod: 1
-  damage: 5
+  damage: 10
   armour: 0
   shield: 0
   lifeSteal: 0

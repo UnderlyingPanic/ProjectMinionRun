@@ -2,10 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Lane { top, mid, bottom };
-public enum Team { Team1, Team2 };
-public enum Unit { swordsman, mage, archer};
-
 public class Gate : MonoBehaviour {
 
     public Lane lane;

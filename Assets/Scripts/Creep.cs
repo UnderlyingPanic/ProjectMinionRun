@@ -59,7 +59,7 @@ public class Creep : MonoBehaviour {
         transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f)); //clamps to only Y rotation
 
         animator.SetBool("isRunning", false);
-        if (Vector3.Distance(this.transform.position, currentTarget.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) > attackRange && !attacking)
+        if (Vector3.Distance(this.transform.position, currentTarget.GetComponent<CapsuleCollider>().ClosestPointOnBounds(transform.position)) > attackRange && !attacking)
         {
             MoveToCurrentTarget();
         } else if (currentTarget == currentWaypoint)
@@ -172,8 +172,8 @@ public class Creep : MonoBehaviour {
                 {
                     closestTarget = enemy;
                 }
-                if (Vector3.Distance(this.transform.position, enemy.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) < Vector3.Distance(this.transform.position, closestTarget.transform.position) &&
-                    Vector3.Distance(this.transform.position, enemy.GetComponent<Collider>().ClosestPointOnBounds(transform.position)) < sightRange)
+                if (Vector3.Distance(this.transform.position, enemy.GetComponent<CapsuleCollider>().ClosestPointOnBounds(transform.position)) < Vector3.Distance(this.transform.position, closestTarget.transform.position) &&
+                    Vector3.Distance(this.transform.position, enemy.GetComponent<CapsuleCollider>().ClosestPointOnBounds(transform.position)) < sightRange)
                 {
                     closestTarget = enemy;
                 }

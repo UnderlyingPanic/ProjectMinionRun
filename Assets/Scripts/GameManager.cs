@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Lane { top, mid, bottom, all };
+public enum Team { Team1, Team2 };
+public enum Unit { swordsman, mage, archer, all };
+public enum Stat { damage, hp, attackSpeed, moveSpeed, armour, shield }
+
 public class GameManager : MonoBehaviour {
 
     public float time;
