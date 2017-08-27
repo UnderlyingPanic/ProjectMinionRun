@@ -133,6 +133,26 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+  team1LifeSteal:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  team2LifeSteal:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   team1Armour:
   - 0
   - 0
@@ -178,6 +198,7 @@ MonoBehaviour:
   - {fileID: 1458715896894060, guid: 1aebd6a8cf42b4e4cb7f6da3f33720e7, type: 2}
   - {fileID: 1619184541004558, guid: 0d895a043dccc014e938c22a9a252e1f, type: 2}
   - {fileID: 1890706120096870, guid: f5e5a81be3963d64d90c3814b5fecf33, type: 2}
+  selectedObject: {fileID: 0}
 --- !u!114 &114871627412888096
 MonoBehaviour:
   m_ObjectHideFlags: 1

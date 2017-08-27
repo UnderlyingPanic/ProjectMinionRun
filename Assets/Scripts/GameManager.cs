@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour {
     public float[] team1MoveSpeed;
     public float[] team2MoveSpeed;
 
+    public float[] team1LifeSteal;
+    public float[] team2LifeSteal;
+
     public float[] team1Armour;
     public float[] team2Armour;
 
@@ -45,6 +48,7 @@ public class GameManager : MonoBehaviour {
         InitialiseMoveSpeedArray();
         InitialiseShieldArray();
         InitialiseArmourArray();
+        InitialiseLifeStealArray();
     }
 	
 	// Update is called once per frame
@@ -213,6 +217,33 @@ public class GameManager : MonoBehaviour {
         foreach (float x in team1Shield)
         {
             team2Shield[z] = x;
+            z++;
+        }
+    }
+
+    private void InitialiseLifeStealArray()
+    {
+        int i = 0;
+
+        foreach (GameObject unit in units)
+        {
+            Creep creep = unit.GetComponent<Creep>();
+            team1LifeSteal[i] = creep.lifeSteal;
+            i++;
+        }
+
+        team1LifeSteal[3] = team1LifeSteal[0];
+        team1LifeSteal[4] = team1LifeSteal[1];
+        team1LifeSteal[5] = team1LifeSteal[2];
+        team1LifeSteal[6] = team1LifeSteal[0];
+        team1LifeSteal[7] = team1LifeSteal[1];
+        team1LifeSteal[8] = team1LifeSteal[2];
+
+        int z = 0;
+
+        foreach (float x in team1LifeSteal)
+        {
+            team2LifeSteal[z] = x;
             z++;
         }
     }
@@ -426,6 +457,43 @@ public class GameManager : MonoBehaviour {
 
         throw new UnityException("Game Manager tried to pass out Shields and failed miserably.");
     }
+
+    public float PassOutLifeSteal(Unit unitType, Lane lane, Team team)
+    {
+        int i = 1;
+
+        if (unitType == Unit.mage)
+        {
+            i = 2;
+        }
+        if (unitType == Unit.archer)
+        {
+            i = 3;
+        }
+
+        if (lane == Lane.mid)
+        {
+            i += 3;
+        }
+        if (lane == Lane.bottom)
+        {
+            i += 6;
+        }
+
+
+        if (team == Team.Team1)
+        {
+            return team1LifeSteal[i - 1];
+        }
+        if (team == Team.Team2)
+        {
+            return team2LifeSteal[i - 1];
+        }
+
+        throw new UnityException("Game Manager tried to pass out Shields and failed miserably.");
+    }
+
+
 
     public void SetSelectedObject (GameObject obj)
     {

@@ -27,8 +27,10 @@ public class SimpleStatModifier : MonoBehaviour {
 
     public void OnRankUp ()
     {
+        CalculateIndex();
         if (unitToModify != Unit.all)
         {
+           
             switch (stat)
             {
                 case Stat.damage:
@@ -57,6 +59,7 @@ public class SimpleStatModifier : MonoBehaviour {
 
         if (unitToModify == Unit.all)
         {
+            
             switch (stat)
             {
                 case Stat.damage:

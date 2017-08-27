@@ -9,15 +9,18 @@ public class Health : MonoBehaviour {
     public float healthAsDecimal;
     public float armour;
     public float shield;
+    public float damageModifier;
 
     public int goldAward;
 
+    
     private Animator animator;
     private Team team;
 
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
+        damageModifier = 1f;
 
         if (GetComponent<Pylon>()) {
             team = GetComponent<Pylon>().team;
@@ -41,9 +44,14 @@ public class Health : MonoBehaviour {
             animator.SetBool("isDead", true);
             if (team != PlayerManager.playerTeam)
             {
-                PlayerManager.essence += goldAward;
+                PlayerManager.essence += (goldAward * PlayerManager.essenceModifier);
             }
             DestroyDeadUnit();
+        }
+
+        if (currHealth > maxHealth)
+        {
+            currHealth = maxHealth;
         }
 	}
 
@@ -55,5 +63,10 @@ public class Health : MonoBehaviour {
     public void DestroyDeadUnit ()
     {
         Destroy(this.gameObject);
+    }
+
+    public float CalculateDamageTaken(float damage)
+    {
+        return (damage * damageModifier);
     }
 }

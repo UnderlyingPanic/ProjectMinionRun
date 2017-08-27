@@ -24,10 +24,10 @@ public class UnitTooltip : MonoBehaviour {
         generalUI = GameObject.Find("General UI").transform;
         gameManager = FindObjectOfType<GameManager>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        
+
+    // Update is called once per frame
+    void Update() {
+        if (selectedObject != null) { }
         if (selectedObject.GetComponent<Creep>())
         {
             Creep creep = selectedObject.GetComponent<Creep>();
@@ -44,7 +44,5 @@ public class UnitTooltip : MonoBehaviour {
 
             hpText.text = currHp + "/" + maxHP;
         }
-            
-           
     }
 }

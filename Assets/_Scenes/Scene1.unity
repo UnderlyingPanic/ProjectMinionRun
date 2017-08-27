@@ -184,6 +184,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &60679911 stripped
 GameObject:
@@ -229,6 +230,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &100395827
 Prefab:
@@ -409,6 +411,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &134512249 stripped
 GameObject:
@@ -436,6 +439,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &140233275
 Prefab:
@@ -603,6 +607,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &224011381 stripped
 GameObject:
@@ -630,6 +635,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &232170503 stripped
 GameObject:
@@ -858,6 +864,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &328383773
 GameObject:
@@ -890,6 +897,106 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &343609719
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1395633174}
+    m_Modifications:
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: dbfeaab02c98415448c6d852ae5ea526, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &377812410 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1269148486700944, guid: 4d323756a10bf9b46a555e280f2a90bc,
@@ -984,6 +1091,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &400038018
 Prefab:
@@ -1096,6 +1204,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &418382063
 Prefab:
@@ -1339,6 +1448,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &572368245
 Prefab:
@@ -1782,6 +1892,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &660266262
 Prefab:
@@ -1863,6 +1974,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &666722630 stripped
 GameObject:
@@ -1937,110 +2049,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4745565094210832, guid: 1c27a483c90554342a9f96c3f108f67b,
     type: 2}
   m_PrefabInternal: {fileID: 678201341}
---- !u!1001 &787972955
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1395633174}
-    m_Modifications:
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1304567651344354, guid: c245152fd42e90941aab91fa994f9964, type: 2}
-      propertyPath: m_Name
-      value: Damage Tree Mid
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c245152fd42e90941aab91fa994f9964, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &848489920
 Prefab:
   m_ObjectHideFlags: 0
@@ -2363,6 +2371,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &887003626 stripped
 GameObject:
@@ -2385,6 +2394,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &895318969
 Prefab:
@@ -2723,6 +2733,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &1018628576
 GameObject:
@@ -2996,6 +3007,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &1141330569
 GameObject:
@@ -3800,6 +3812,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &1362048770
 Prefab:
@@ -4167,9 +4180,9 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!224 &1600039857 stripped
 RectTransform:
-  m_PrefabParentObject: {fileID: 224170230267632654, guid: c245152fd42e90941aab91fa994f9964,
+  m_PrefabParentObject: {fileID: 224933795928935510, guid: dbfeaab02c98415448c6d852ae5ea526,
     type: 2}
-  m_PrefabInternal: {fileID: 787972955}
+  m_PrefabInternal: {fileID: 343609719}
 --- !u!1 &1607670084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4358,6 +4371,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &1726689471
 Prefab:
@@ -4440,6 +4454,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &1785254041 stripped
 GameObject:
@@ -4462,6 +4477,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &1802122047
 GameObject:
@@ -4812,6 +4828,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &2001339599 stripped
 GameObject:
@@ -4920,6 +4937,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1001 &2071077680
 Prefab:
@@ -5001,6 +5019,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &2087244682
 GameObject:
@@ -5218,6 +5237,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 0
   shield: 0
+  damageModifier: 0
   goldAward: 1000
 --- !u!1 &2122355591
 GameObject:

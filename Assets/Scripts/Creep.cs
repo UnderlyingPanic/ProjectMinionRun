@@ -254,6 +254,10 @@ public class Creep : MonoBehaviour {
         }
 
         Health enemyHealth;
+        float calculatedDamage;
+        
+        //calculate damage to go send to enemy
+        calculatedDamage = damage;
 
         if (!currentTarget.GetComponent<Health>())
         {
@@ -264,7 +268,11 @@ public class Creep : MonoBehaviour {
         if (currentTarget.GetComponent<Health>())
         {
             enemyHealth = currentTarget.GetComponent<Health>();
-            enemyHealth.TakeDamage(damage);
+            //This creep sends damage to enemy creep for modification, and then deals that much damage to it.
+            enemyHealth.TakeDamage(enemyHealth.CalculateDamageTaken(calculatedDamage));
+
+            //Creep can call CalculateDamageTaken(calculateDamage) to see how much damage it might deal prior to dealing it.
+            GetComponent<Health>().currHealth += enemyHealth.CalculateDamageTaken(calculatedDamage) * lifeSteal;
         }
     }
 
@@ -277,6 +285,7 @@ public class Creep : MonoBehaviour {
         attackSpeedMod = gameManager.PassOutAtkSpd(type, lane, team);
         shield = gameManager.PassOutShields(type,lane,team);
         armour = gameManager.PassOutArmour(type, lane, team);
+        lifeSteal = gameManager.PassOutLifeSteal(type, lane, team);
     }
 
     public void SetTooltipTarget()

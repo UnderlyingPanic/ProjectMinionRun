@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class EssenceText : MonoBehaviour {
+public class Extraction : MonoBehaviour {
+
+    public float essMod;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +13,11 @@ public class EssenceText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        GetComponent<Text>().text = Mathf.Floor(PlayerManager.essence).ToString();
+		
 	}
+
+    public void OnRankUp()
+    {
+        PlayerManager.essenceModifier += essMod;
+    }
 }
