@@ -272,7 +272,12 @@ public class Creep : MonoBehaviour {
             enemyHealth.TakeDamage(enemyHealth.CalculateDamageTaken(calculatedDamage));
 
             //Creep can call CalculateDamageTaken(calculateDamage) to see how much damage it might deal prior to dealing it.
-            GetComponent<Health>().currHealth += enemyHealth.CalculateDamageTaken(calculatedDamage) * lifeSteal;
+
+            float lifeStealtoHeal = enemyHealth.CalculateDamageTaken(calculatedDamage) * lifeSteal;
+
+            GetComponent<Health>().Heal(lifeStealtoHeal);
+
+            Debug.Log(name + " dealt " + enemyHealth.CalculateDamageTaken(calculatedDamage) + " damage, and healed for " + lifeStealtoHeal);
         }
     }
 

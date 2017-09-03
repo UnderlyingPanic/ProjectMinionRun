@@ -7,7 +7,9 @@ public class SpellProjectile : MonoBehaviour {
     public float moveSpeed;
 
     [HideInInspector]
-    public float damage;    
+    public float damage;
+    [HideInInspector]
+    public GameObject origin;
     private Transform target;
     private Vector3 targetPos;
     
@@ -47,18 +49,6 @@ public class SpellProjectile : MonoBehaviour {
 
     public void DealProjectileDamage()
     {
-        Health enemyHealth;
-
-        if (!target.gameObject.GetComponent<Health>())
-        {
-            Debug.LogWarning(name + " has tried to deal damage to " + target.gameObject.name + " but it doesn't have health");
-            return;
-        }
-
-        if (target.gameObject.GetComponent<Health>())
-        {
-            enemyHealth = target.gameObject.GetComponent<Health>();
-            enemyHealth.TakeDamage(damage);
-        }
+        origin.GetComponent<Creep>().DealDamage();
     }
 }

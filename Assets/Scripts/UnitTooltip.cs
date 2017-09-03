@@ -27,7 +27,9 @@ public class UnitTooltip : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (selectedObject != null) { }
+        if (selectedObject == null) {
+            return;
+        }
         if (selectedObject.GetComponent<Creep>())
         {
             Creep creep = selectedObject.GetComponent<Creep>();

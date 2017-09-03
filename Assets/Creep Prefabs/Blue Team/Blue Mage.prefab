@@ -1164,6 +1164,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 3
   shield: 4
+  damageModifier: 0
   goldAward: 100
 --- !u!114 &114829688827485910
 MonoBehaviour:

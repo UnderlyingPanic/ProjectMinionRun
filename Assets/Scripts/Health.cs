@@ -60,6 +60,11 @@ public class Health : MonoBehaviour {
         currHealth = currHealth - damage;
     }
 
+    public void Heal(float amount)
+    {
+       currHealth = currHealth + amount;
+    }
+
     public void DestroyDeadUnit ()
     {
         Destroy(this.gameObject);
