@@ -18,6 +18,7 @@ public class Creep : MonoBehaviour {
     public List<GameObject> enemiesInSights = new List<GameObject>();
     public GameObject currentTarget;
     public GameObject tooltip;
+    public float SecondWindBonus;
 
     private bool attacking;
     private int arrayI;
@@ -27,7 +28,6 @@ public class Creep : MonoBehaviour {
     private WaypointManager waypointManager;
     private GameObject[] pathToTake;
     private GameManager gameManager;
-
      
 
 	// Use this for initialization
@@ -76,9 +76,7 @@ public class Creep : MonoBehaviour {
     //Target Detection has to go in Fixed Update, because OnCollisionStay syncs with it.
     private void FixedUpdate()
     {
-
         enemiesInSights.RemoveAll(item => item == null);
-
     }
 
     private void MoveToCurrentTarget()
@@ -274,10 +272,7 @@ public class Creep : MonoBehaviour {
             //Creep can call CalculateDamageTaken(calculateDamage) to see how much damage it might deal prior to dealing it.
 
             float lifeStealtoHeal = enemyHealth.CalculateDamageTaken(calculatedDamage) * lifeSteal;
-
             GetComponent<Health>().Heal(lifeStealtoHeal);
-
-            Debug.Log(name + " dealt " + enemyHealth.CalculateDamageTaken(calculatedDamage) + " damage, and healed for " + lifeStealtoHeal);
         }
     }
 

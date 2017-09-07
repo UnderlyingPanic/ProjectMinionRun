@@ -32,6 +32,10 @@ public class GameManager : MonoBehaviour {
     public float[] team1Shield;
     public float[] team2Shield;
 
+    public float[] team1SecondWind = new float[3];
+    public float[] team2SecondWind = new float[3];
+
+    // Top Mid Bot
     //Top Melee, Top Mage, Top Archer, Mid Melee, Mid Mage, Mid Archer, Bot Melee, Bot Mage, Bot Archer
     public int[] unitIndex;
 
@@ -246,6 +250,16 @@ public class GameManager : MonoBehaviour {
             team2LifeSteal[z] = x;
             z++;
         }
+    }
+
+    private void InitialiseSecondWind()
+    {
+        team1SecondWind[0] = 0;
+        team1SecondWind[1] = 0;
+        team1SecondWind[2] = 0;
+        team2SecondWind[1] = 0;
+        team2SecondWind[2] = 0;
+        team2SecondWind[3] = 0;
     }
 
     public float PassOutDamage(Unit unitType, Lane lane, Team team)
@@ -492,8 +506,6 @@ public class GameManager : MonoBehaviour {
 
         throw new UnityException("Game Manager tried to pass out Shields and failed miserably.");
     }
-
-
 
     public void SetSelectedObject (GameObject obj)
     {
