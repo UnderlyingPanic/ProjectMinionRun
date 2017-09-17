@@ -147,7 +147,6 @@ GameObject:
   - component: {fileID: 114492160768050782}
   - component: {fileID: 114287070330302576}
   - component: {fileID: 114477491006183190}
-  - component: {fileID: 114529695518773626}
   - component: {fileID: 114623489949688260}
   m_Layer: 5
   m_Name: Swordsman Training (T2)
@@ -670,6 +669,7 @@ GameObject:
   - component: {fileID: 114557677561515650}
   - component: {fileID: 114576479285597746}
   - component: {fileID: 114224114243906950}
+  - component: {fileID: 114701261293865336}
   m_Layer: 5
   m_Name: Second Wind (T5)
   m_TagString: Untagged
@@ -2885,17 +2885,6 @@ MonoBehaviour:
   m_Text: '0/5
 
 '
---- !u!114 &114529695518773626
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1173106841961746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114534066066959876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3944,6 +3933,23 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114701261293865336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1741587228781364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe5462909e735541bcdee07daba52b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsPerRank:
+  - 0.5
+  - 1
+  - 1.5
+  - 2
+  - 2.5
 --- !u!114 &114702658457460122
 MonoBehaviour:
   m_ObjectHideFlags: 1

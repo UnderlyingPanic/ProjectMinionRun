@@ -20,6 +20,7 @@ public class Creep : MonoBehaviour {
     public GameObject tooltip;
     public float SecondWindBonus;
 
+    private int laneIndex;
     private bool attacking;
     private int arrayI;
     private float sightRange;
@@ -28,10 +29,11 @@ public class Creep : MonoBehaviour {
     private WaypointManager waypointManager;
     private GameObject[] pathToTake;
     private GameManager gameManager;
-     
+    private float calculatedDamage;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         animator = GetComponent<Animator>();
         gameManager = FindObjectOfType<GameManager>();
 
@@ -252,10 +254,8 @@ public class Creep : MonoBehaviour {
         }
 
         Health enemyHealth;
-        float calculatedDamage;
-        
-        //calculate damage to go send to enemy
-        calculatedDamage = damage;
+
+        calculatedDamage = CalculateDamage();
 
         if (!currentTarget.GetComponent<Health>())
         {
@@ -266,26 +266,43 @@ public class Creep : MonoBehaviour {
         if (currentTarget.GetComponent<Health>())
         {
             enemyHealth = currentTarget.GetComponent<Health>();
-            //This creep sends damage to enemy creep for modification, and then deals that much damage to it.
-            enemyHealth.TakeDamage(enemyHealth.CalculateDamageTaken(calculatedDamage));
 
+            //This creep sends damage to enemy creep for modification, and then deals that much damage to it.
             //Creep can call CalculateDamageTaken(calculateDamage) to see how much damage it might deal prior to dealing it.
+            enemyHealth.TakeDamage(enemyHealth.CalculateDamageTaken(calculatedDamage));
 
             float lifeStealtoHeal = enemyHealth.CalculateDamageTaken(calculatedDamage) * lifeSteal;
             GetComponent<Health>().Heal(lifeStealtoHeal);
         }
     }
 
+    public float CalculateDamage()
+    {
+        float missingHealth = GetComponent<Health>().ReturnMissingHealth();
+        float secondWindCalulation = missingHealth * SecondWindBonus;
+
+        //calculate damage to go send to enemy
+        float damageCalc = damage + secondWindCalulation;
+        
+        //Debugging for SecondWind
+        print("Missing Health: " + missingHealth + ", Damage I Deal: " + damageCalc);
+
+        return damageCalc;
+    }
+
     private void InitialiseCreepStats()
     {
+        InitialiseLaneIndex();
+
         damage = gameManager.PassOutDamage(type, lane, team);
-        GetComponent<Health>().maxHealth = gameManager.PassOutHealth(type,lane,team);
+        GetComponent<Health>().maxHealth = gameManager.PassOutHealth(type, lane, team);
         GetComponent<Health>().currHealth = gameManager.PassOutHealth(type, lane, team);
         moveSpeed = gameManager.PassOutMoveSpeed(type, lane, team);
         attackSpeedMod = gameManager.PassOutAtkSpd(type, lane, team);
-        shield = gameManager.PassOutShields(type,lane,team);
+        shield = gameManager.PassOutShields(type, lane, team);
         armour = gameManager.PassOutArmour(type, lane, team);
         lifeSteal = gameManager.PassOutLifeSteal(type, lane, team);
+        SecondWindBonus = gameManager.team1SecondWind[laneIndex];
     }
 
     public void SetTooltipTarget()
@@ -298,6 +315,24 @@ public class Creep : MonoBehaviour {
         else
         {
             FindObjectOfType<UnitTooltip>().selectedObject = this.gameObject;
+        }
+    }
+
+    private void InitialiseLaneIndex()
+    {
+        if (lane == Lane.mid)
+        {
+            laneIndex = 1;
+        }
+
+        if (lane == Lane.top)
+        {
+            laneIndex = 0;
+        }
+
+        if (lane == Lane.bottom)
+        {
+            laneIndex = 2;
         }
     }
 }

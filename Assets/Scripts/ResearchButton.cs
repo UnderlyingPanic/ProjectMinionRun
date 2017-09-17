@@ -14,7 +14,6 @@ public class ResearchButton : MonoBehaviour {
     public ResearchButton[] requiredTalents;
     public int numberRequiredFromPreviousTeir;
 
-    private bool haveRequiredTalents;
     private Lane lane;
     private Text rankText;
     private bool gateIsResearching;

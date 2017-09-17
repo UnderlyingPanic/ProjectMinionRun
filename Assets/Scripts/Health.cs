@@ -74,4 +74,9 @@ public class Health : MonoBehaviour {
     {
         return (damage * damageModifier);
     }
+    public float ReturnMissingHealth ()
+    {
+        float missingHealth = maxHealth - currHealth;
+        return missingHealth;
+    }
 }

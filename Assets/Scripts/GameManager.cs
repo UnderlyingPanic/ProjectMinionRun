@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour {
         InitialiseShieldArray();
         InitialiseArmourArray();
         InitialiseLifeStealArray();
+        InitialiseSecondWind();
     }
 	
 	// Update is called once per frame
@@ -257,9 +258,9 @@ public class GameManager : MonoBehaviour {
         team1SecondWind[0] = 0;
         team1SecondWind[1] = 0;
         team1SecondWind[2] = 0;
+        team2SecondWind[0] = 0;
         team2SecondWind[1] = 0;
         team2SecondWind[2] = 0;
-        team2SecondWind[3] = 0;
     }
 
     public float PassOutDamage(Unit unitType, Lane lane, Team team)

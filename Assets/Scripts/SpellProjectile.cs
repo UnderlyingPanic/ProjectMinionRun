@@ -12,6 +12,7 @@ public class SpellProjectile : MonoBehaviour {
     public GameObject origin;
     private Transform target;
     private Vector3 targetPos;
+    public Health targetHealth;
     
 	// Use this for initialization
 	void Start () {
@@ -49,6 +50,7 @@ public class SpellProjectile : MonoBehaviour {
 
     public void DealProjectileDamage()
     {
-        origin.GetComponent<Creep>().DealDamage();
+
+        targetHealth.TakeDamage(damage);
     }
 }

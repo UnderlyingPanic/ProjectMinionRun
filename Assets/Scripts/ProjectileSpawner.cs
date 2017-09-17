@@ -33,7 +33,8 @@ public class ProjectileSpawner : MonoBehaviour {
 
         GameObject newProjectile = Instantiate(projectile, spawnPoint.transform.position, Quaternion.identity);
         newProjectile.GetComponent<SpellProjectile>().SetTarget(target);
-        newProjectile.GetComponent<SpellProjectile>().damage = damage;
+        newProjectile.GetComponent<SpellProjectile>().targetHealth = target.GetComponent<Health>();
+        newProjectile.GetComponent<SpellProjectile>().damage = this.GetComponent<Creep>().CalculateDamage();
         newProjectile.GetComponent<SpellProjectile>().origin = this.gameObject;
     }
 
