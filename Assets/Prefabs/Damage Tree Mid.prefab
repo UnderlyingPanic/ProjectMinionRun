@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114131011025130080}
   - component: {fileID: 114685998271178456}
   - component: {fileID: 114290786646649384}
+  - component: {fileID: 114770911712791026}
   m_Layer: 5
   m_Name: Captain (T3)
   m_TagString: Untagged
@@ -1782,7 +1783,7 @@ MonoBehaviour:
   activeRank: {fileID: 0}
   teir: 5
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 10
+  numberRequiredFromPreviousTeir: 0
 --- !u!114 &114234611481334250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4307,6 +4308,23 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &114770911712791026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1068426929590514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34110e0b70eb08343b4a1fb1d0501628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsPerRank:
+  - 0.05
+  - 0.1
+  - 0.15
+  - 0.2
+  - 0.25
 --- !u!114 &114778886376286468
 MonoBehaviour:
   m_ObjectHideFlags: 1

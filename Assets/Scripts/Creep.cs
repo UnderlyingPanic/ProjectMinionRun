@@ -30,6 +30,8 @@ public class Creep : MonoBehaviour {
     private GameObject[] pathToTake;
     private GameManager gameManager;
     private float calculatedDamage;
+    public float captainBuffGained;
+    public bool captain = false;
 
 
     // Use this for initialization
@@ -253,6 +255,19 @@ public class Creep : MonoBehaviour {
             return;
         }
 
+        if (gameManager.PassOutCaptain(team, laneIndex) > 0)
+        {
+            foreach (Archer archer in FindObjectsOfType<Archer>())
+            {
+                if (Vector3.Distance(transform.position, archer.transform.position) <= gameManager.captainDistance)
+                {
+                    if (archer.GetComponent<Creep>().captain) {
+                        captainBuffGained = gameManager.PassOutCaptain(team, laneIndex);
+                    }
+                }
+            }
+        }
+
         Health enemyHealth;
 
         calculatedDamage = CalculateDamage();
@@ -282,10 +297,13 @@ public class Creep : MonoBehaviour {
         float secondWindCalulation = missingHealth * SecondWindBonus;
 
         //calculate damage to go send to enemy
-        float damageCalc = damage + secondWindCalulation;
+        //Calculate SecondWind bonus
+        float damageWithSecondWind = damage + secondWindCalulation;
+        //Apply Captain
+        float damageCalc = (damageWithSecondWind * captainBuffGained) + damageWithSecondWind;
         
         //Debugging for SecondWind
-        print("Missing Health: " + missingHealth + ", Damage I Deal: " + damageCalc);
+        print("Missing Health: " + missingHealth + ", Damage I Deal: " + damageCalc + " including " + captainBuffGained + " from the nearby Captain");
 
         return damageCalc;
     }
@@ -302,7 +320,15 @@ public class Creep : MonoBehaviour {
         shield = gameManager.PassOutShields(type, lane, team);
         armour = gameManager.PassOutArmour(type, lane, team);
         lifeSteal = gameManager.PassOutLifeSteal(type, lane, team);
-        SecondWindBonus = gameManager.team1SecondWind[laneIndex];
+        SecondWindBonus = gameManager.PassOutSecondWind(team, laneIndex);
+
+        if (type == Unit.archer)
+        {
+            if (gameManager.PassOutCaptain(team, laneIndex) > 0)
+            {
+                captain = true;
+            }
+        }
     }
 
     public void SetTooltipTarget()

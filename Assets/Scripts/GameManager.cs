@@ -10,6 +10,7 @@ public enum Stat { damage, hp, attackSpeed, moveSpeed, armour, shield }
 public class GameManager : MonoBehaviour {
 
     public float time;
+    public float captainDistance;
 
     public float[] team1Damage;
     public float[] team2Damage;
@@ -35,6 +36,9 @@ public class GameManager : MonoBehaviour {
     public float[] team1SecondWind = new float[3];
     public float[] team2SecondWind = new float[3];
 
+    public float[] team1Captain = new float[3];
+    public float[] team2Captain = new float[3];
+
     // Top Mid Bot
     //Top Melee, Top Mage, Top Archer, Mid Melee, Mid Mage, Mid Archer, Bot Melee, Bot Mage, Bot Archer
     public int[] unitIndex;
@@ -54,6 +58,7 @@ public class GameManager : MonoBehaviour {
         InitialiseArmourArray();
         InitialiseLifeStealArray();
         InitialiseSecondWind();
+        InitialiseCaptain();
     }
 	
 	// Update is called once per frame
@@ -261,6 +266,16 @@ public class GameManager : MonoBehaviour {
         team2SecondWind[0] = 0;
         team2SecondWind[1] = 0;
         team2SecondWind[2] = 0;
+    }
+
+    private void InitialiseCaptain()
+    {
+        team1Captain[0] = 0;
+        team1Captain[1] = 0;
+        team1Captain[2] = 0;
+        team2Captain[0] = 0;
+        team2Captain[1] = 0;
+        team2Captain[2] = 0;
     }
 
     public float PassOutDamage(Unit unitType, Lane lane, Team team)
@@ -506,6 +521,34 @@ public class GameManager : MonoBehaviour {
         }
 
         throw new UnityException("Game Manager tried to pass out Shields and failed miserably.");
+    }
+
+    public float PassOutSecondWind(Team team, int index)
+    {
+        if (team == Team.Team1)
+        {
+            return team1SecondWind[index];
+        }
+        if (team == Team.Team2)
+        {
+            return team2SecondWind[index];
+        }
+
+        throw new UnityException("Game Manager tried to pass out SecondWindBonus and failed miserably.");
+    }
+
+    public float PassOutCaptain(Team team, int index)
+    {
+        if (team == Team.Team1)
+        {
+            return team1Captain[index];
+        }
+        if (team == Team.Team2)
+        {
+            return team2Captain[index];
+        }
+
+        throw new UnityException("Game Manager tried to pass out SecondWindBonus and failed miserably.");
     }
 
     public void SetSelectedObject (GameObject obj)

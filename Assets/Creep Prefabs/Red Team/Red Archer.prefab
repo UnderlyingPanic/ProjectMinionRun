@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 114856992099097470}
   - component: {fileID: 65550027297139648}
   - component: {fileID: 114030490988604754}
+  - component: {fileID: 114156412687435002}
   m_Layer: 2
   m_Name: Red Archer
   m_TagString: Untagged
@@ -1110,6 +1111,7 @@ MonoBehaviour:
   healthAsDecimal: 1
   armour: 1
   shield: 2
+  damageModifier: 0
   goldAward: 100
 --- !u!114 &114100894128393400
 MonoBehaviour:
@@ -1135,6 +1137,18 @@ MonoBehaviour:
   enemiesInSights: []
   currentTarget: {fileID: 0}
   tooltip: {fileID: 1456580853033558, guid: 30bb1efdb4e783b49a123bd28363d37d, type: 2}
+  SecondWindBonus: 0
+--- !u!114 &114156412687435002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617755027851056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcb7c22cfc9954f97af64ed29026d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114856992099097470
 MonoBehaviour:
   m_ObjectHideFlags: 1

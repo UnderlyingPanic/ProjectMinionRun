@@ -25,6 +25,7 @@ public class LifeFromBlood : MonoBehaviour {
     public void OnRankUp()
     {
         CalculateIndex();
+        
         modifier = modifiers[GetComponent<ResearchButton>().currentRank - 1];
 
         GameManager gameManager = FindObjectOfType<GameManager>();

@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 114136434238837468}
   - component: {fileID: 114603322134697146}
   - component: {fileID: 114850491244929930}
+  - component: {fileID: 114106023890426578}
   m_Layer: 2
   m_Name: Blue Archer
   m_TagString: Untagged
@@ -1124,6 +1125,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114106023890426578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890706120096870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4efcb7c22cfc9954f97af64ed29026d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114136434238837468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1148,6 +1160,7 @@ MonoBehaviour:
   enemiesInSights: []
   currentTarget: {fileID: 0}
   tooltip: {fileID: 1456580853033558, guid: 30bb1efdb4e783b49a123bd28363d37d, type: 2}
+  SecondWindBonus: 0
 --- !u!114 &114603322134697146
 MonoBehaviour:
   m_ObjectHideFlags: 1
