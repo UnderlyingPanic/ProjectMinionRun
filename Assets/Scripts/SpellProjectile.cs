@@ -50,7 +50,6 @@ public class SpellProjectile : MonoBehaviour {
 
     public void DealProjectileDamage()
     {
-
-        targetHealth.TakeDamage(damage);
+        origin.GetComponent<Creep>().DealDamage();
     }
 }

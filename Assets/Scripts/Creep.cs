@@ -20,7 +20,7 @@ public class Creep : MonoBehaviour {
     public GameObject tooltip;
     public float SecondWindBonus;
 
-    private int laneIndex;
+    public int laneIndex;
     private bool attacking;
     private int arrayI;
     private float sightRange;
@@ -31,6 +31,7 @@ public class Creep : MonoBehaviour {
     private GameManager gameManager;
     private float calculatedDamage;
     public float captainBuffGained;
+    public float captainBuffOnSpawn;
     public bool captain = false;
 
 
@@ -45,6 +46,8 @@ public class Creep : MonoBehaviour {
 
         InitialiseCreepPathing();
         InitialiseCreepStats();
+
+        captainBuffOnSpawn = gameManager.PassOutCaptain(team, laneIndex);
     }
 	
 	// Update is called once per frame
@@ -77,7 +80,6 @@ public class Creep : MonoBehaviour {
     }
 
 
-    //Target Detection has to go in Fixed Update, because OnCollisionStay syncs with it.
     private void FixedUpdate()
     {
         enemiesInSights.RemoveAll(item => item == null);
@@ -248,22 +250,19 @@ public class Creep : MonoBehaviour {
         }
     }
 
+    //DEAL DAMAGE
     public void DealDamage()
     {
-        if (currentTarget == null) //IF ANYTHING BREAKS REMOVE THIS FIRST
-        {
-            return;
-        }
+        captainBuffGained = 0;
 
         if (gameManager.PassOutCaptain(team, laneIndex) > 0)
         {
-            foreach (Archer archer in FindObjectsOfType<Archer>())
+            foreach (Archer archer in FindObjectsOfType<Archer>()) // Team, Distance, Captain
             {
-                if (Vector3.Distance(transform.position, archer.transform.position) <= gameManager.captainDistance)
+                Creep archerCreep = archer.GetComponent<Creep>();
+                if (archerCreep.team == this.team && Vector3.Distance(transform.position, archer.transform.position) <= gameManager.captainDistance && archerCreep.captain)
                 {
-                    if (archer.GetComponent<Creep>().captain) {
-                        captainBuffGained = gameManager.PassOutCaptain(team, laneIndex);
-                    }
+                    captainBuffGained = archerCreep.captainBuffOnSpawn;
                 }
             }
         }
@@ -291,6 +290,7 @@ public class Creep : MonoBehaviour {
         }
     }
 
+    //CALCULATE DAMAGE
     public float CalculateDamage()
     {
         float missingHealth = GetComponent<Health>().ReturnMissingHealth();
@@ -301,9 +301,12 @@ public class Creep : MonoBehaviour {
         float damageWithSecondWind = damage + secondWindCalulation;
         //Apply Captain
         float damageCalc = (damageWithSecondWind * captainBuffGained) + damageWithSecondWind;
-        
-        //Debugging for SecondWind
-        print("Missing Health: " + missingHealth + ", Damage I Deal: " + damageCalc + " including " + captainBuffGained + " from the nearby Captain");
+
+        //Debugging
+        if (team == Team.Team1)
+        {
+            print("Name: " + name + "Missing Health: " + missingHealth + ", Damage I Deal: " + damageCalc + " including " + captainBuffGained * 100 + "% from the nearby Captain");
+        }
 
         return damageCalc;
     }

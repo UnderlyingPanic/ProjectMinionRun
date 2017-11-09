@@ -2709,6 +2709,10 @@ Prefab:
       propertyPath: waveGap
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 1820870175063072, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
   m_IsPrefabParent: 0
@@ -2987,6 +2991,10 @@ Prefab:
         type: 2}
       propertyPath: waveGap
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820870175063072, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a64be522feb4cdc499c7bea6e12cbf75, type: 2}
@@ -3426,7 +3434,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1937292733989786, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114135783576446834, guid: 8e3e21bad3cd47943b8ff6258ae0490a,
         type: 2}
@@ -3578,20 +3586,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -3911,7 +3905,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1937292733989786, guid: 8e3e21bad3cd47943b8ff6258ae0490a, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114135783576446834, guid: 8e3e21bad3cd47943b8ff6258ae0490a,
         type: 2}
