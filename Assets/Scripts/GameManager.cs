@@ -39,6 +39,9 @@ public class GameManager : MonoBehaviour {
     public float[] team1Captain = new float[3];
     public float[] team2Captain = new float[3];
 
+    public float[] team1AT = new float[3];
+    public float[] team2AT = new float[3];
+
     // Top Mid Bot
     //Top Melee, Top Mage, Top Archer, Mid Melee, Mid Mage, Mid Archer, Bot Melee, Bot Mage, Bot Archer
     public int[] unitIndex;
@@ -276,6 +279,16 @@ public class GameManager : MonoBehaviour {
         team2Captain[0] = 0;
         team2Captain[1] = 0;
         team2Captain[2] = 0;
+    }
+
+    private void InitialiseAT()
+    {
+        team1AT[0] = 0;
+        team1AT[1] = 0;
+        team1AT[2] = 0;
+        team2AT[0] = 0;
+        team2AT[1] = 0;
+        team2AT[2] = 0;
     }
 
     public float PassOutDamage(Unit unitType, Lane lane, Team team)
@@ -549,6 +562,20 @@ public class GameManager : MonoBehaviour {
         }
 
         throw new UnityException("Game Manager tried to pass out SecondWindBonus and failed miserably.");
+    }
+
+    public float PassOutAT(Team team, int index)
+    {
+        if (team == Team.Team1)
+        {
+            return team1AT[index];
+        }
+        if (team == Team.Team2)
+        {
+            return team2AT[index];
+        }
+
+        throw new UnityException("Game Manager tried to pass out AdvancedTactics Bonus and failed miserably.");
     }
 
     public void SetSelectedObject (GameObject obj)

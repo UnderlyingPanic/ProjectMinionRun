@@ -19,6 +19,8 @@ public class Creep : MonoBehaviour {
     public GameObject currentTarget;
     public GameObject tooltip;
     public float SecondWindBonus;
+    public float atBonus;
+    public float cumulativeATBonus;
 
     public int laneIndex;
     private bool attacking;
@@ -253,29 +255,10 @@ public class Creep : MonoBehaviour {
     //DEAL DAMAGE
     public void DealDamage()
     {
-        captainBuffGained = 0;
-
-        if (gameManager.PassOutCaptain(team, laneIndex) > 0)
-        {
-            foreach (Archer archer in FindObjectsOfType<Archer>()) // Team, Distance, Captain
-            {
-                Creep archerCreep = archer.GetComponent<Creep>();
-                if (archerCreep.team == this.team && Vector3.Distance(transform.position, archer.transform.position) <= gameManager.captainDistance && archerCreep.captain)
-                {
-                    captainBuffGained = archerCreep.captainBuffOnSpawn;
-                }
-            }
-        }
+        CheckForCaptainAndSetBuff();
 
         Health enemyHealth;
-
         calculatedDamage = CalculateDamage();
-
-        if (!currentTarget.GetComponent<Health>())
-        {
-            Debug.LogWarning(name + " has tried to deal damage to " + currentTarget + " but it doesn't have health");
-            return;
-        }
 
         if (currentTarget.GetComponent<Health>())
         {
@@ -287,8 +270,13 @@ public class Creep : MonoBehaviour {
 
             float lifeStealtoHeal = enemyHealth.CalculateDamageTaken(calculatedDamage) * lifeSteal;
             GetComponent<Health>().Heal(lifeStealtoHeal);
+        } else {
+            Debug.LogWarning(name + " has tried to deal damage to " + currentTarget + " but it doesn't have health");
+            return;
         }
     }
+
+    
 
     //CALCULATE DAMAGE
     public float CalculateDamage()
@@ -324,12 +312,30 @@ public class Creep : MonoBehaviour {
         armour = gameManager.PassOutArmour(type, lane, team);
         lifeSteal = gameManager.PassOutLifeSteal(type, lane, team);
         SecondWindBonus = gameManager.PassOutSecondWind(team, laneIndex);
+        atBonus = gameManager.PassOutAT(team, laneIndex);
 
         if (type == Unit.archer)
         {
             if (gameManager.PassOutCaptain(team, laneIndex) > 0)
             {
                 captain = true;
+            }
+        }
+    }
+
+    private void CheckForCaptainAndSetBuff()
+    {
+        captainBuffGained = 0;
+
+        if (gameManager.PassOutCaptain(team, laneIndex) > 0)
+        {
+            foreach (Archer archer in FindObjectsOfType<Archer>()) // Team, Distance, Captain
+            {
+                Creep archerCreep = archer.GetComponent<Creep>();
+                if (archerCreep.team == this.team && Vector3.Distance(transform.position, archer.transform.position) <= gameManager.captainDistance && archerCreep.captain)
+                {
+                    captainBuffGained = archerCreep.captainBuffOnSpawn;
+                }
             }
         }
     }
