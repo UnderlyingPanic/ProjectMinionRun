@@ -50,6 +50,11 @@ public class SpellProjectile : MonoBehaviour {
 
     public void DealProjectileDamage()
     {
+        if (!origin)
+        {
+            Destroy(this.gameObject);
+        }
+
         origin.GetComponent<Creep>().DealDamage();
     }
 }

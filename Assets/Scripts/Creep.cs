@@ -19,7 +19,7 @@ public class Creep : MonoBehaviour {
     public GameObject currentTarget;
     public GameObject tooltip;
     public float SecondWindBonus;
-    public float atBonus;
+    public float atBonusAtSpawn;
     public float cumulativeATBonus;
 
     public int laneIndex;
@@ -50,6 +50,7 @@ public class Creep : MonoBehaviour {
         InitialiseCreepStats();
 
         captainBuffOnSpawn = gameManager.PassOutCaptain(team, laneIndex);
+        atBonusAtSpawn = gameManager.PassOutAT(team, laneIndex);
     }
 	
 	// Update is called once per frame
@@ -256,6 +257,7 @@ public class Creep : MonoBehaviour {
     public void DealDamage()
     {
         CheckForCaptainAndSetBuff();
+        CheckForAdvancedTacticsAndSetBuff();
 
         Health enemyHealth;
         calculatedDamage = CalculateDamage();
@@ -288,12 +290,16 @@ public class Creep : MonoBehaviour {
         //Calculate SecondWind bonus
         float damageWithSecondWind = damage + secondWindCalulation;
         //Apply Captain
-        float damageCalc = (damageWithSecondWind * captainBuffGained) + damageWithSecondWind;
+        float damageWithCaptain = (damageWithSecondWind * captainBuffGained) + damageWithSecondWind;
+        //Apply Advanced Tactics
+        float damageWithAT = (damageWithCaptain * cumulativeATBonus) + damageWithCaptain;
+
+        float damageCalc = damageWithAT;
 
         //Debugging
         if (team == Team.Team1)
         {
-            print("Name: " + name + "Missing Health: " + missingHealth + ", Damage I Deal: " + damageCalc + " including " + captainBuffGained * 100 + "% from the nearby Captain");
+            print("Name: " + name + "Missing Health: " + missingHealth + ", Damage I Deal: " + damageCalc + " including " + cumulativeATBonus * 100 + "% from Advanced Tactics");
         }
 
         return damageCalc;
@@ -312,7 +318,7 @@ public class Creep : MonoBehaviour {
         armour = gameManager.PassOutArmour(type, lane, team);
         lifeSteal = gameManager.PassOutLifeSteal(type, lane, team);
         SecondWindBonus = gameManager.PassOutSecondWind(team, laneIndex);
-        atBonus = gameManager.PassOutAT(team, laneIndex);
+        atBonusAtSpawn = gameManager.PassOutAT(team, laneIndex);
 
         if (type == Unit.archer)
         {
@@ -338,6 +344,26 @@ public class Creep : MonoBehaviour {
                 }
             }
         }
+    }
+
+    private void CheckForAdvancedTacticsAndSetBuff()
+    {
+        int unitCount = 0;
+        cumulativeATBonus = 0;
+
+        if (atBonusAtSpawn == 0)
+        {
+            return;
+        }
+
+        foreach (Creep unit in FindObjectsOfType<Creep>())
+        {
+            if (unit.team == this.team && Vector3.Distance(transform.position, unit.transform.position) <= gameManager.ATDistance)
+            {
+                unitCount++;
+            }
+        }
+        cumulativeATBonus = atBonusAtSpawn * unitCount;
     }
 
     public void SetTooltipTarget()

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
 
     public float time;
     public float captainDistance;
+    public float ATDistance;
 
     public float[] team1Damage;
     public float[] team2Damage;

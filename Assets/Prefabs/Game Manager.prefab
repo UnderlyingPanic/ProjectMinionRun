@@ -53,7 +53,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  captainDistance: 300
+  captainDistance: 50
+  ATDistance: 50
   team1Damage:
   - 0
   - 0
@@ -207,6 +208,14 @@ MonoBehaviour:
   - 0
   - 0
   team2Captain:
+  - 0
+  - 0
+  - 0
+  team1AT:
+  - 0
+  - 0
+  - 0
+  team2AT:
   - 0
   - 0
   - 0
