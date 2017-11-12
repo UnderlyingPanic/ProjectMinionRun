@@ -53,8 +53,12 @@ public class SpellProjectile : MonoBehaviour {
         if (!origin)
         {
             Destroy(this.gameObject);
+            return;
         }
 
-        origin.GetComponent<Creep>().DealDamage();
+        if (origin)
+        {
+            origin.GetComponent<Creep>().DealDamage();
+        }
     }
 }

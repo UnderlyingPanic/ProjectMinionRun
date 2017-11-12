@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 114802187267253392}
   - component: {fileID: 114792339657398152}
   - component: {fileID: 114757521047402566}
+  - component: {fileID: 114104073349566836}
   m_Layer: 5
   m_Name: Giant Slayer (T4)
   m_TagString: Untagged
@@ -440,6 +441,7 @@ GameObject:
   - component: {fileID: 114778886376286468}
   - component: {fileID: 114078885684203202}
   - component: {fileID: 114146800846615470}
+  - component: {fileID: 114918561848484832}
   m_Layer: 5
   m_Name: Advanced Tactics (T3)
   m_TagString: Untagged
@@ -787,6 +789,7 @@ GameObject:
   - component: {fileID: 114947769151336316}
   - component: {fileID: 114660968906664238}
   - component: {fileID: 114049527533149656}
+  - component: {fileID: 114866296647647182}
   m_Layer: 5
   m_Name: Vengeance (T3)
   m_TagString: Untagged
@@ -978,7 +981,7 @@ MonoBehaviour:
   activeRank: {fileID: 0}
   teir: 3
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 10
+  numberRequiredFromPreviousTeir: 0
 --- !u!114 &114052935194670636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1145,6 +1148,23 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114104073349566836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1271779087533578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa931a9e40c5edb4b80eeb606c3cf292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsPerRank:
+  - 0.01
+  - 0.02
+  - 0.03
+  - 0.04
+  - 0.05
 --- !u!114 &114119339548045254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1224,7 +1244,7 @@ MonoBehaviour:
   activeRank: {fileID: 0}
   teir: 3
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 10
+  numberRequiredFromPreviousTeir: 0
 --- !u!114 &114156892877410498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3754,7 +3774,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Units gain 0.1% damage per rank each time they witness
+            m_StringArgument: Units gain 1% damage per rank each time they witness
               an allies death
             m_BoolArgument: 0
           m_CallState: 2
@@ -4281,7 +4301,7 @@ MonoBehaviour:
   activeRank: {fileID: 0}
   teir: 4
   requiredTalents: []
-  numberRequiredFromPreviousTeir: 10
+  numberRequiredFromPreviousTeir: 0
 --- !u!114 &114760494572783908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4604,6 +4624,23 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114866296647647182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1840420692993222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec95349e2765de8439c320a527af54f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsPerRank:
+  - 0.001
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!114 &114903859996366142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4695,6 +4732,23 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114918561848484832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561779622590706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5693d9918c2449c488db27eb30d2c973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsPerRank:
+  - 0.0015
+  - 0.003
+  - 0.0045
+  - 0.006
+  - 0.0075
 --- !u!114 &114920217101391576
 MonoBehaviour:
   m_ObjectHideFlags: 1

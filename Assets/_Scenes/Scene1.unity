@@ -994,15 +994,35 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114290786646649384, guid: dbfeaab02c98415448c6d852ae5ea526,
+    - target: {fileID: 114866296647647182, guid: dbfeaab02c98415448c6d852ae5ea526,
         type: 2}
-      propertyPath: numberRequiredFromPreviousTeir
-      value: 10
+      propertyPath: pointsPerRank.Array.data[0]
+      value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 114146800846615470, guid: dbfeaab02c98415448c6d852ae5ea526,
+    - target: {fileID: 114866296647647182, guid: dbfeaab02c98415448c6d852ae5ea526,
         type: 2}
-      propertyPath: numberRequiredFromPreviousTeir
-      value: 0
+      propertyPath: pointsPerRank.Array.data[1]
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114866296647647182, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: pointsPerRank.Array.data[2]
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114866296647647182, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: pointsPerRank.Array.data[3]
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114866296647647182, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: pointsPerRank.Array.data[4]
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114660968906664238, guid: dbfeaab02c98415448c6d852ae5ea526,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Units gain 10% damage per rank each time they witness an allies death
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dbfeaab02c98415448c6d852ae5ea526, type: 2}
@@ -3815,7 +3835,7 @@ Prefab:
     - target: {fileID: 224550680049847000, guid: 6698731e59c367943b43ba7c3f44bd7e,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 121.97009
+      value: 121.970215
       objectReference: {fileID: 0}
     - target: {fileID: 224550680049847000, guid: 6698731e59c367943b43ba7c3f44bd7e,
         type: 2}
@@ -3895,7 +3915,7 @@ Prefab:
     - target: {fileID: 224236735385248544, guid: 6698731e59c367943b43ba7c3f44bd7e,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 121.97009
+      value: 121.970215
       objectReference: {fileID: 0}
     - target: {fileID: 224236735385248544, guid: 6698731e59c367943b43ba7c3f44bd7e,
         type: 2}
@@ -4161,28 +4181,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1395633173}
---- !u!1 &1406715699 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1561779622590706, guid: dbfeaab02c98415448c6d852ae5ea526,
-    type: 2}
-  m_PrefabInternal: {fileID: 343609719}
---- !u!114 &1406715700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1406715699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5693d9918c2449c488db27eb30d2c973, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointsPerRank:
-  - 0.0015
-  - 0.003
-  - 0.0045
-  - 0.006
-  - 0.0075
 --- !u!1 &1459573430
 GameObject:
   m_ObjectHideFlags: 0

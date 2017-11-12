@@ -43,6 +43,13 @@ public class GameManager : MonoBehaviour {
     public float[] team1AT = new float[3];
     public float[] team2AT = new float[3];
 
+    public float[] team1GiantSlayer = new float[3];
+    public float[] team2GiantSlayer = new float[3];
+
+    public float[] team1Vengeance = new float[3];
+    public float[] team2Vengeance = new float[3];
+
+
     // Top Mid Bot
     //Top Melee, Top Mage, Top Archer, Mid Melee, Mid Mage, Mid Archer, Bot Melee, Bot Mage, Bot Archer
     public int[] unitIndex;
@@ -63,6 +70,9 @@ public class GameManager : MonoBehaviour {
         InitialiseLifeStealArray();
         InitialiseSecondWind();
         InitialiseCaptain();
+        InitialiseAT();
+        InitialiseGiantSlayer();
+        InitialiseVengeance();
     }
 	
 	// Update is called once per frame
@@ -70,6 +80,8 @@ public class GameManager : MonoBehaviour {
     {
         time = Time.timeSinceLevelLoad;
 	}
+
+    //INITIALISERS
 
     private void InitialiseUnitDamageArray()
     {
@@ -291,6 +303,28 @@ public class GameManager : MonoBehaviour {
         team2AT[1] = 0;
         team2AT[2] = 0;
     }
+
+    private void InitialiseGiantSlayer()
+    {
+        team1GiantSlayer[0] = 0;
+        team1GiantSlayer[1] = 0;
+        team1GiantSlayer[2] = 0;
+        team2GiantSlayer[0] = 0;
+        team2GiantSlayer[1] = 0;
+        team2GiantSlayer[2] = 0;
+    }
+
+    private void InitialiseVengeance()
+    {
+        team1Vengeance[0] = 0;
+        team1Vengeance[1] = 0;
+        team1Vengeance[2] = 0;
+        team2Vengeance[0] = 0;
+        team2Vengeance[1] = 0;
+        team2Vengeance[2] = 0;
+    }
+
+    //PASS OUTS
 
     public float PassOutDamage(Unit unitType, Lane lane, Team team)
     {
@@ -578,6 +612,37 @@ public class GameManager : MonoBehaviour {
 
         throw new UnityException("Game Manager tried to pass out AdvancedTactics Bonus and failed miserably.");
     }
+
+    public float PassOutGiantSlayer(Team team, int index)
+    {
+        if (team == Team.Team1)
+        {
+            return team1GiantSlayer[index];
+        }
+        if (team == Team.Team2)
+        {
+            return team2GiantSlayer[index];
+        }
+
+        throw new UnityException("Game Manager tried to pass out AdvancedTactics Bonus and failed miserably.");
+    }
+
+    public float PassOutVengeance(Team team, int index)
+    {
+        if (team == Team.Team1)
+        {
+            return team1Vengeance[index];
+        }
+        if (team == Team.Team2)
+        {
+            return team2Vengeance[index];
+        }
+
+        throw new UnityException("Game Manager tried to pass out AdvancedTactics Bonus and failed miserably.");
+    }
+
+
+    //Tooltip stuff
 
     public void SetSelectedObject (GameObject obj)
     {

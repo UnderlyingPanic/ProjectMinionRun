@@ -5,6 +5,7 @@ using System.Linq;
 
 public class Creep : MonoBehaviour {
 
+    //INSPECTOR REQUIRED
     public float moveSpeed;
     public float attackRange;
     public Unit type;
@@ -18,10 +19,9 @@ public class Creep : MonoBehaviour {
     public List<GameObject> enemiesInSights = new List<GameObject>();
     public GameObject currentTarget;
     public GameObject tooltip;
-    public float SecondWindBonus;
-    public float atBonusAtSpawn;
-    public float cumulativeATBonus;
 
+    private float SecondWindBonus;
+    private float atBonusAtSpawn;
     public int laneIndex;
     private bool attacking;
     private int arrayI;
@@ -32,9 +32,14 @@ public class Creep : MonoBehaviour {
     private GameObject[] pathToTake;
     private GameManager gameManager;
     private float calculatedDamage;
-    public float captainBuffGained;
-    public float captainBuffOnSpawn;
+    private float captainBuffGained;
+    private float captainBuffOnSpawn;
+    private float cumulativeATBonus;
     public bool captain = false;
+    public float giantSlayerAtSpawn;
+    public float targetHealthDifference;
+    private bool enemyIsAGiant;
+    public float vengeanceAtSpawn;
 
 
     // Use this for initialization
@@ -48,9 +53,6 @@ public class Creep : MonoBehaviour {
 
         InitialiseCreepPathing();
         InitialiseCreepStats();
-
-        captainBuffOnSpawn = gameManager.PassOutCaptain(team, laneIndex);
-        atBonusAtSpawn = gameManager.PassOutAT(team, laneIndex);
     }
 	
 	// Update is called once per frame
@@ -256,15 +258,36 @@ public class Creep : MonoBehaviour {
     //DEAL DAMAGE
     public void DealDamage()
     {
+        Health enemyHealth;
+
         CheckForCaptainAndSetBuff();
         CheckForAdvancedTacticsAndSetBuff();
 
-        Health enemyHealth;
+        //CALCULATE DAMAGE THIS CREEP CAN DO
         calculatedDamage = CalculateDamage();
 
         if (currentTarget.GetComponent<Health>())
         {
             enemyHealth = currentTarget.GetComponent<Health>();
+            float giantSlayerBonus = 0;
+
+            //Check to see if this creep has Giant Slayer
+            if (giantSlayerAtSpawn > 0)
+            {
+                CheckForGiantSlayer(enemyHealth.maxHealth);
+            }
+
+            if (enemyIsAGiant)
+            {
+                giantSlayerBonus = (enemyHealth.maxHealth - GetComponent<Health>().maxHealth) * giantSlayerAtSpawn;
+                calculatedDamage = giantSlayerBonus + calculatedDamage;
+            }
+
+            //Debugging
+            if (team == Team.Team1)
+            {
+                print(name + "Has tried to deal " + calculatedDamage + " including " + giantSlayerBonus + " from Giant Slayer");
+            }
 
             //This creep sends damage to enemy creep for modification, and then deals that much damage to it.
             //Creep can call CalculateDamageTaken(calculateDamage) to see how much damage it might deal prior to dealing it.
@@ -278,8 +301,6 @@ public class Creep : MonoBehaviour {
         }
     }
 
-    
-
     //CALCULATE DAMAGE
     public float CalculateDamage()
     {
@@ -287,6 +308,7 @@ public class Creep : MonoBehaviour {
         float secondWindCalulation = missingHealth * SecondWindBonus;
 
         //calculate damage to go send to enemy
+
         //Calculate SecondWind bonus
         float damageWithSecondWind = damage + secondWindCalulation;
         //Apply Captain
@@ -296,39 +318,19 @@ public class Creep : MonoBehaviour {
 
         float damageCalc = damageWithAT;
 
-        //Debugging
-        if (team == Team.Team1)
-        {
-            print("Name: " + name + "Missing Health: " + missingHealth + ", Damage I Deal: " + damageCalc + " including " + cumulativeATBonus * 100 + "% from Advanced Tactics");
-        }
-
         return damageCalc;
     }
 
-    private void InitialiseCreepStats()
+    private void CheckForGiantSlayer(float enemyHealth)
     {
-        InitialiseLaneIndex();
+        float maxHealth = GetComponent<Health>().maxHealth;
 
-        damage = gameManager.PassOutDamage(type, lane, team);
-        GetComponent<Health>().maxHealth = gameManager.PassOutHealth(type, lane, team);
-        GetComponent<Health>().currHealth = gameManager.PassOutHealth(type, lane, team);
-        moveSpeed = gameManager.PassOutMoveSpeed(type, lane, team);
-        attackSpeedMod = gameManager.PassOutAtkSpd(type, lane, team);
-        shield = gameManager.PassOutShields(type, lane, team);
-        armour = gameManager.PassOutArmour(type, lane, team);
-        lifeSteal = gameManager.PassOutLifeSteal(type, lane, team);
-        SecondWindBonus = gameManager.PassOutSecondWind(team, laneIndex);
-        atBonusAtSpawn = gameManager.PassOutAT(team, laneIndex);
-
-        if (type == Unit.archer)
+        if (enemyHealth >= (maxHealth * 2))
         {
-            if (gameManager.PassOutCaptain(team, laneIndex) > 0)
-            {
-                captain = true;
-            }
+            enemyIsAGiant = true;
         }
     }
-
+   
     private void CheckForCaptainAndSetBuff()
     {
         captainBuffGained = 0;
@@ -376,6 +378,41 @@ public class Creep : MonoBehaviour {
         else
         {
             FindObjectOfType<UnitTooltip>().selectedObject = this.gameObject;
+        }
+    }
+
+    private void InitialiseCreepStats()
+    {
+        InitialiseLaneIndex();
+
+        damage = gameManager.PassOutDamage(type, lane, team);
+        GetComponent<Health>().maxHealth = gameManager.PassOutHealth(type, lane, team);
+        GetComponent<Health>().currHealth = gameManager.PassOutHealth(type, lane, team);
+        moveSpeed = gameManager.PassOutMoveSpeed(type, lane, team);
+        attackSpeedMod = gameManager.PassOutAtkSpd(type, lane, team);
+        shield = gameManager.PassOutShields(type, lane, team);
+        armour = gameManager.PassOutArmour(type, lane, team);
+        lifeSteal = gameManager.PassOutLifeSteal(type, lane, team);
+        SecondWindBonus = gameManager.PassOutSecondWind(team, laneIndex);
+        captainBuffOnSpawn = gameManager.PassOutCaptain(team, laneIndex);
+        atBonusAtSpawn = gameManager.PassOutAT(team, laneIndex);
+        giantSlayerAtSpawn = gameManager.PassOutGiantSlayer(team, laneIndex);
+        vengeanceAtSpawn = gameManager.PassOutVengeance(team, laneIndex);
+
+        if (type == Unit.archer)
+        {
+            if (gameManager.PassOutCaptain(team, laneIndex) > 0)
+            {
+                captain = true;
+            }
+        }
+    }
+
+    public void OnAllyDeath()
+    {
+        if (vengeanceAtSpawn > 0)
+        {
+            damage = (damage * vengeanceAtSpawn) + damage;
         }
     }
 
